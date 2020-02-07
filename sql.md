@@ -1,8 +1,13 @@
 # SQL
 
 ## Table of Contents
-1. [Between](#between)
-2. [Coalesce](#coalesce)
+[Indexes](#indexes)
+[Between](#between)
+[Coalesce](#coalesce)
+
+## Indexes
+Concurrent Indexing: creating an index can interfere with regular operation of a database. 
+`CONCURRENTLY` option of `CREATE INDEX`.
 
 ## Between
 ```sql

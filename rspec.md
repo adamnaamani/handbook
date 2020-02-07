@@ -1,10 +1,11 @@
 # Rspec
 
 ## Table of Contents
-1. [Components](#components)
-2. [Methods](#methods)
-3. [Definitions](#definitions)
-4. [Factory Bot](#factory-bot)
+[Components](#components)
+[Conventions](#conventions)
+[Methods](#methods)
+[Definitions](#definitions)
+[Factory Bot](#factory-bot)
 
 ## Components
 * `rspec-core`: command-line program
@@ -12,16 +13,24 @@
 * `rspec-mocks`: tightly control environment
 * `rspec-rails`: supports using rspec to test RoR applications
 
-### Methods
+## Methods
 * describe
 * context
 * it
 
-### Definitions
+## Conventions
+In a describe block, it's conventional to use the method name as the description:
+```ruby
+describe '#method' do
+  expect(subject).to eq(...)
+end
+```
+
+## Definitions
 * Specify: alias for “it".
 * Hook: piece of code that runs automatically during a certain point in the test suite.
 
-### FactoryBot
+## FactoryBot
 * Creates object and associations, persisted to database. Triggers validations.
   ```ruby
   create(:class)
@@ -39,17 +48,17 @@
   attributes_for(:class)
   ```
 
-### Variables
+## Variables
 * let vs let!
   > The difference between let, and let! is that let! is called in an implicit before block. So the result is evaluated and cached before the it block.
 
-### Error Messages
+## Error Messages
 * Custom error message:
   ```ruby
   expect(…).to eq(…), “Error message” 
   ```
 
-### Before
+## Before
 * Before example:
   ```ruby
   before(:example)
@@ -59,7 +68,7 @@
   before(:context)
   ```
 
-### Shared example and context
+## Shared example and context
 Both remove duplication across tests.
 * Shared example:
   ```ruby
@@ -72,23 +81,23 @@ Both remove duplication across tests.
   ```
   > The include_context method injects context (i.e. before blocks, instance variables, helper methods, let variables) into an example group.
 
-### Defining Custom Objects
+## Defining Custom Objects
 Invoke the subject method and provide a Ruby block. The final evaluation of the block will be the value of subject whenever it's used in an example.
 subject { "hello" }
 
-### Described Class
+## Described Class
 `described_class` dynamically references the class being tested (the one passed as an argument to the top-level describe method). The advantage is that, if the class name changes, the rest of the spec does not have to change.
 
-### The Subject
+## The Subject
 * The subject equals an instance of the class under test.
 * Subject is basically: `let(:subject) { Hash.new }` behind the scenes.
 * One Liner Syntax: `it { is_expected.to eq(…) }`. It being subject.
 
-### Testing
+## Testing
 * You can use `puts` in test to see contents of object
 * `binding.pry`
 
-### Matchers
+## Matchers
 * to, not_to
 * eq, eql (value, including same type), 
 * equal, be (equal and be matcher, cares about object identity)
@@ -177,7 +186,7 @@ subject { "hello" }
   end
   ```
 
-### Compound expectations
+## Compound expectations
 * And
   ```ruby
   expect(subject).to be_odd.and be > 20
@@ -189,7 +198,7 @@ subject { "hello" }
   expect(subject).to eq(:canada).or eq(:usa)
   ```
 
-### Mocks
+## Mocks
 * double
   ```ruby
   let(:var) { double(‘string’, method: ‘test’) }
@@ -210,7 +219,7 @@ subject { "hello" }
   let(:animal) { spy(‘animal’) }
   ```
 
-### Expect vs. Allow
+## Expect vs. Allow
 * Expect
   ```ruby
   expect(var.method).to eq(‘test’)
@@ -225,7 +234,7 @@ subject { "hello" }
   allow(calculator).to receive(:add).and_return(15)
   ```
 
-### Receive 
+## Receive 
 * Counts
   ```ruby
   allow(var).to receive(:method).once
@@ -234,7 +243,7 @@ subject { "hello" }
   allow(var).to receive(:method).at_least(2).times
   ```
 
-### Matching arguments
+## Matching arguments
   ```ruby
   allow(three_element_array).to receive(:first).with(no_args).and_return(1)
   allow(three_element_array).to receive(:first).with(1).and_return([1])
