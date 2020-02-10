@@ -19,9 +19,15 @@
 * it
 
 ## Conventions
-In a describe block, it's conventional to use the method name as the description:
+In a describe block, it's conventional to use the method or class name as the description:
 ```ruby
+# Method
 describe '#method' do
+  expect(subject).to eq(...)
+end
+
+# Class
+describe '.class' do
   expect(subject).to eq(...)
 end
 ```

@@ -13,3 +13,15 @@ Shallow rendering is useful to constrain yourself to testing a component as a un
 ```javascript
 describe()
 ```
+
+## Snapshots
+```javascript
+test('Should match snapshot', () => {
+  const component = <Listing {...props} />
+  expect(component.debug()).toMatchSnapshot()
+})
+```
+Updating snapshots:
+```bash
+npm test -- -u
+```

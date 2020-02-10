@@ -7,14 +7,12 @@
 
 
 ## Namespacing
-
 * Top level namespace:
   ```ruby
   ::Namespace::Service::Class.call()
   ```
 
 ## Methods
-
 * `.freeze`
   ```ruby
   %w[one two three].freeze
@@ -25,6 +23,17 @@
   ```ruby
   object.reload
   ```
+* `.all?(*args)`
+  
+  Passes each element of the collection to the given block.  
+
+## Lambda Functions
+Anonymous function
+```ruby
+lambda { |params|
+...
+}
+```
 
 ## Pry
   ```ruby
@@ -58,3 +67,13 @@
   ```ruby
   object&.property
   ```
+
+## Splat
+* Array splat operator:
+```ruby
+def method(*array); end
+```
+* Hash splat operator:
+```ruby
+def method(**hash); end
+```
