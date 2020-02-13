@@ -8,6 +8,16 @@
     3. [Coalesce](#coalesce)
 
 ## Postgres
+### Operators
+* Contains
+```sql
+@>
+```
+* jsonb
+```postgres
+-->
+-> 
+```
 ### PostGIS
 
 
