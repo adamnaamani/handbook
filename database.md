@@ -8,9 +8,25 @@
     3. [Coalesce](#coalesce)
 
 ## Postgres
+### PostGIS
 
 
 ## SQL
+### Entity Relationship Model
+Composed of entity types and specifies relationships that can exist between instances of those entity types.
+* Show relationships
+* Business process
+* Visual representation
+* Show links (primary keys)
+
+![ER Diagram](images/er-diagram.png)
+
+### Primary Key
+* A column (or set of columns) whose values uniquely identify every row in the table.
+
+### Foreign Key
+* One or more columns that can be used together to identify a single row in another table.
+
 ### Indexes
 * Concurrent Indexing 
 Creating an index can interfere with regular operation of a database. 
@@ -18,26 +34,50 @@ Creating an index can interfere with regular operation of a database.
 * GIN
 Best for static data, 3 times faster than GiST, takes 3 times longer to build than GiST
 
-### Explain
+### Temporary Tables
 ```sql
-EXPLAIN(ANALYZE, COSTS, VERBOSE, BUFFERS)
+CREATE TEMPORARY TABLE Actives AS
+(
+  SELECT *
+  FROM properties
+  WHERE status = 'active'
+)
 ```
 
-### Between
+### Comments
+* Single Line
 ```sql
-BETWEEN
+SELECT property_id
+--,type_of_dwelling
+,full_address
+FROM listings 
+```
+* Section
+```sql
+SELECT property_id
+/*,type_of_dwelling
+,full_address
+*/
+FROM listings
 ```
 
-### Coalesce
-```sql
-COALESCE
-```
-
-### Union
-Combines the result sets of two queries.
-```sql
-UNION
-```
+### Operations
+* Explain
+    ```sql
+    EXPLAIN(ANALYZE, COSTS, VERBOSE, BUFFERS)
+    ```
+* Between
+    ```sql
+    BETWEEN
+    ```
+* Coalesce
+    ```sql
+    COALESCE
+    ```
+* Union: combines the result sets of two queries.
+    ```sql
+    UNION
+    ```
 
 ### Matchers
 `ILIKE` allows matching of strings based on comparison with a pattern (case-insensitive)

@@ -14,6 +14,8 @@
 
 ## Methods
 * `.freeze`
+  
+  Makes it so an array can't be modified.
   ```ruby
   %w[one two three].freeze
   ```
@@ -29,11 +31,11 @@
 
 ## Lambda Functions
 Anonymous function
-```ruby
-lambda { |params|
-...
-}
-```
+  ```ruby
+  (lambda do |params|
+  ...
+  end)
+  ```
 
 ## Pry
   ```ruby
@@ -41,23 +43,23 @@ lambda { |params|
   ```
 
 ## Heredoc
-  ```
+  ```ruby
   <<-SQL
     SELECT * FROM properties
   SQL
   ```
-  ```
+  ```ruby
   <<~SQL
     SELECT * FROM properties
   SQL
   ```
 
 ## Interpolation
-* Non-interpolated Array of symbols, separated by whitespace
+* Non-interpolated Array of symbols, separated by whitespace.
   ```ruby
   %i[param1 param2]
   ```
-* Interpolated Array of symbols, separated by whitespace
+* Interpolated Array of symbols, separated by whitespace.
   ```ruby
   %I[] 
   ```
@@ -68,12 +70,18 @@ lambda { |params|
   object&.property
   ```
 
-## Splat
+## Arguments
+* Keyword arguments: Vary the order of arguments with keywords.
+  ```ruby
+  def method(pid:, status:, city: 'Vancouver'); end
+
+  method(status: 'Active', pid: '123-456-789')
+  ```
 * Array splat operator:
-```ruby
-def method(*array); end
-```
+  ```ruby
+  def method(*array); end
+  ```
 * Hash splat operator:
-```ruby
-def method(**hash); end
-```
+  ```ruby
+  def method(**hash); end
+  ```
