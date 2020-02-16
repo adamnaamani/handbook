@@ -8,7 +8,9 @@
     1. [Comments](#comments)
     1. [Filtering](#filtering)
     1. [Operators](#operators)
-    1. [Matchers](#matchers)
+    1. [Wildcards](#wildcards)
+    1. [Sorting](#sorting)
+    1. [Math Operations](#math-operations)
 1. [Postgres](#postgres)
     1. [Operators](#operators)
     1. [PostGIS](#postgis)
@@ -44,7 +46,7 @@ CREATE TEMPORARY TABLE Actives AS
 (
   SELECT *
   FROM properties
-  WHERE status = 'active'
+  WHERE status = 'active';
 )
 ```
 
@@ -54,7 +56,7 @@ CREATE TEMPORARY TABLE Actives AS
 SELECT property_id
 --,type_of_dwelling
 ,full_address
-FROM listings 
+FROM listings ;
 ```
 * Section
 ```sql
@@ -62,7 +64,7 @@ SELECT property_id
 /*,type_of_dwelling
 ,full_address
 */
-FROM listings
+FROM listings;
 ```
 
 ### Filtering
@@ -118,16 +120,71 @@ WHERE column_name operator value;
   ```
 * Not
   ```sql
-  WHERE NOT city = 'Vancouver'
+  WHERE NOT city = 'Vancouver';
   ```  
 * Not equal to
   ```sql
-  WHERE listings.type_of_dwelling <> 'Single Family Dwelling'
+  WHERE listings.type_of_dwelling <> 'Single Family Dwelling';
   ```    
 
-### Matchers
-`ILIKE` allows matching of strings based on comparison with a pattern (case-insensitive)
+### Wildcards
+* Takes longer to run if used at the end of search patterns. Placement of wildcards is important.
 
+| Wildcard        | Action                                                    |
+|-----------------|-----------------------------------------------------------|
+| '%House'        | Retrieves anything ending with the word house             |
+| 'House%'        | Retrieves anything after the word house                   |
+| '%House%'       | Retrieves anything before and after the word house        |
+| 'A%M'           | Retrieves anything that starts with "A" and ends with "M" |
+| 'a%@gmail.com%' | Retrieves gmail addresses that start with "a"             |
+
+* Underscore
+  ```sql
+  WHERE type_of_dwelling LIKE '_house';
+  --Output: townhouse, rowhouse
+  ```
+* `ILIKE`  
+Allows matching of strings based on comparison with a pattern (case-insensitive)
+
+### Sorting
+* Sequence of retrieved data cannot be assumed if order is not specified.
+* Must always be the last clause in `SELECT` statement.
+  ```sql
+  SELECT *
+  FROM properties
+  ORDER BY pid;
+  ```
+* Direction  
+  - Only applies to the column names it directly precedes.
+  ```sql
+  DESC --descending
+  ASC --ascending
+  ```
+
+### Math Operations
+| Operator | Description    |
+|----------|----------------|
+| +        | Addition       |
+| -        | Subtraction    |
+| *        | Multiplication |
+| /        | Division       |
+
+* Multiplication
+  ```sql
+  SELECT 
+  address_id,
+  floor_area_grand_total * sold_price_per_sqft AS soldPrice  
+  FROM listings
+  ORDER BY pid;
+  ```
+* Combining operations
+  > PEDMAS
+  ```sql
+  SELECT 
+  (total_value - land_value) / sold_price AS ppsf  
+  FROM listings
+  ORDER BY pid;
+  ```  
 
 ## Postgres
 ### Operators
