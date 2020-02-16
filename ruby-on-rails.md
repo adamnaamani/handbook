@@ -98,7 +98,8 @@ Anonymous function
   ```  
 
 ## Arguments
-* Keyword arguments: Vary the order of arguments with keywords.
+* Keyword arguments
+  > Vary the order of arguments with keywords.
   ```ruby
   def method(pid:, status:, city: 'Vancouver'); end
 
@@ -111,6 +112,11 @@ Anonymous function
 * Hash splat operator:
   ```ruby
   def method(**hash); end
+  ```
+* Unused block arguments  
+  > If it's necessary, use _ or _k as an argument name to indicate that it won't be used.
+  ```ruby
+    Import::ListingJob.perform_later(listing.symbolize_keys.reject { |_, v| v.blank? })
   ```
 
 ## Heredoc
