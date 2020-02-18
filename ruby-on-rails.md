@@ -16,6 +16,7 @@
 [Store](#store)  
 [Internationalization](#internationalization)  
 [Validations](#validations)  
+[Errors](#errors)
 
 ## Statistics
 `rails stats`
@@ -54,6 +55,15 @@ property.listings.build
 #=> <Listing id: nil, full_address: nil, property_id: 1>
 ```
 
+### Delegation
+  Exposes contained objects' public methods as your own.
+  * `:to` - Specifies the target object.
+  * `:prefix` - Prefixes the new method with the target name or a custom prefix.
+  * `:allow_nil` - If set to true, prevents a +Module::DelegationError+ from being raised.
+  ```ruby
+  delegate :full_address, to: :address
+  ```
+
 ## Methods
 * `.freeze`  
   Makes it so an array can't be modified.
@@ -87,7 +97,57 @@ property.listings.build
   c.method(:two).arity   #=> 1
   c.method(:three).arity #=> -1
   c.method(:four).arity  #=> 2
-  ```  
+  ```
+* `.changed?`  
+  Returns true if any of the attributes has unsaved changes, false otherwise.
+  ```ruby
+  listing.property.changed?
+  ```
+* `.keep_if`  
+  Deletes every element of self for which the given block evaluates to false. 
+* `.is_a?`  
+  Returns true if class is the class of object, or if class is one of the superclasses of object or modules included in object.
+  ```ruby
+  response.is_a?(Net::HTTPSuccess)
+  ```
+* `.clear`  
+  Removes association from object.
+  ```ruby
+  listing.property.clear
+  ```
+* `.send`  
+  Tests private methods
+  ```ruby
+  Listing.geocode.send
+  ```
+* `.clamp`  
+  Can be used to keep a number within the range of min, max.
+  ```ruby
+  10.clamp(5, 20)
+  #=> 10
+
+  10.clamp(15, 20)
+  #=> 15
+
+  10.clamp(0, 5)
+  #=> 5
+  ```
+* `.inject`  
+  Combines all elements of enum by applying a binary operation, specified by a block or a symbol that names a method or operator.
+  ```ruby
+  [one, two, three].inject(:merge)
+  ```
+* `.abs`  
+  Returns the absolute value of number.
+  ```ruby
+  -21.abs
+  #=> 21
+  ```
+* `.any?`  
+   Uses SQL count instead of loading each task, resulting in a faster, more performant result (from ~900ms down to ~100ms). However, what we actually want to know in this case is if there is at least one record in our scope. We don't really need to count all of the tasks, it should stop after finding the first one. So applying LIMIT would solve that for us.
+   ```ruby
+   property.listings.any?
+   ```
 
 ## Lambda
 Anonymous function
@@ -129,6 +189,13 @@ Anonymous function
   <<~SQL
     SELECT * FROM properties
   SQL
+  ```
+
+## Operators
+* Pessimistic operator  
+  > Highest-released gem version between a range.
+  ```ruby
+  ~> 1.0.0
   ```
 
 ## Attributes
@@ -193,3 +260,7 @@ You can check if a value is included in an array using the `inclusion:` helper. 
 ```ruby
 validates :continent, inclusion: { in: %w(North America South America) }
 ```
+
+## Errors
+### Deadlock
+A state in which each member of a group is waiting for another member, including itself, to take action, such as sending a message or more commonly releasing a lock.

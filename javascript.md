@@ -21,3 +21,10 @@ function roughScale(x, base) {
 console.log(roughScale('100', 10))
 // expected output: 10000
 ```
+
+## Booleans
+* True/False  
+  > Returns the boolean true/false association of a value.
+  ```javascript
+  !!
+  ```

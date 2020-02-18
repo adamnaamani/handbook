@@ -19,3 +19,9 @@ cucumber features/feature/name.feature
 ```
 @chrome
 ```
+
+## World
+In Ruby, Cucumber runs scenarios in a `World`. By default, the `World` is an instance of `Object`.
+  ```ruby
+  World()
+  ```

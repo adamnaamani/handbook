@@ -1,11 +1,12 @@
 # Rspec
 
 ## Table of Contents
-[Components](#components)
-[Conventions](#conventions)
-[Methods](#methods)
-[Definitions](#definitions)
-[Factory Bot](#factory-bot)
+[Components](#components)  
+[Conventions](#conventions)  
+[Methods](#methods)  
+[Definitions](#definitions)  
+[Factory Bot](#factory-bot)  
+[Traits](#traits)
 
 ## Components
 * `rspec-core`: command-line program
@@ -253,4 +254,13 @@ subject { "hello" }
   ```ruby
   allow(three_element_array).to receive(:first).with(no_args).and_return(1)
   allow(three_element_array).to receive(:first).with(1).and_return([1])
+  ```
+
+## Traits
+  ```ruby
+  trait :with_associations do
+    property { build_stubbed(:property) }
+  end
+
+  create(:listing, :with_associations)
   ```
