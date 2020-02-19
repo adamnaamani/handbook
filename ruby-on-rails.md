@@ -144,10 +144,27 @@ property.listings.build
   #=> 21
   ```
 * `.any?`  
-   Uses SQL count instead of loading each task, resulting in a faster, more performant result (from ~900ms down to ~100ms). However, what we actually want to know in this case is if there is at least one record in our scope. We don't really need to count all of the tasks, it should stop after finding the first one. So applying LIMIT would solve that for us.
-   ```ruby
-   property.listings.any?
-   ```
+  Uses SQL count instead of loading each task, resulting in a faster, more performant result (from ~900ms down to ~100ms). However, what we actually want to know in this case is if there is at least one record in our scope. We don't really need to count all of the tasks, it should stop after finding the first one. So applying LIMIT would solve that for us.
+  ```ruby
+  property.listings.any?
+  ```
+* `.rjust`  
+  If integer is greater than the length of string, returns a `new String` of length integer with string right justified and padded with `padstr`; otherwise, returns string.
+  ```ruby
+  "hello".rjust(4)            #=> "hello"
+  "hello".rjust(20)           #=> "               hello"
+  "hello".rjust(20, '1234')   #=> "123412341234123hello"
+  ```
+* `.tally`  
+  Released in Rails 6. Counts the occurrence of each element.
+  ```ruby
+  ["a", "b", "c", "b"].tally
+  #=> {"a"=>1, "b"=>2, "c"=>1}
+  ```
+* `.eager`  
+  Generates a non-lazy enumerator from a lazy enumerator.
+  
+
 
 ## Lambda
 Anonymous function
