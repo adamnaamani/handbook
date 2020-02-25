@@ -9,6 +9,7 @@
 1. [Domain Driven Design](#domain-driven-design)
 1. [Null Object Pattern](#null-object-pattern)
 1. [Yagni](#yagni)
+1. [Unmarshalling](#unmarshalling)
 
 ## Memoization
 An optimization technique used primarily to speed up computer programs by storing the results of expensive function calls and returning the cached result when the same inputs occur again.
@@ -44,3 +45,6 @@ end
 
 ## YAGNI
 "You aren't gonna need it" is a principle of extreme programming (XP) that states a programmer should not add functionality until deemed necessary.
+
+## Unmarshalling
+In computer science, unmarshalling or unmarshaling refers to the process of transforming a representation of an object that was used for storage or transmission to a representation of the object that is executable. A serialized object which was used for communication can not be processed by a computer program. An unmarshalling interface takes the serialized object and transforms it into an executable form.
