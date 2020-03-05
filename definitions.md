@@ -11,6 +11,9 @@ A network that coordinates electronic payments and automated money transfers. AC
 #### Ad hoc
 Ad hoc is a Latin phrase meaning literally "to this". In English, it generally signifies a solution designed for a specific problem or task, non-generalizable, and not intended to be able to be adapted to other purposes.
 
+#### Atomic
+Atomicity is a guarantee of isolation from concurrent processes. Additionally, atomic operations commonly have a succeed-or-fail definition — they either successfully change the state of the system, or have no apparent effect.
+
 #### Burndown Chart
 A burn down chart is a graphical representation of work left to do versus time. The outstanding work is often on the vertical axis, with time along the horizontal. Burn down charts are a run chart of outstanding work. It is useful for predicting when all of the work will be completed.
 
@@ -29,6 +32,9 @@ Also known as credit memo. Issued to indicate a return of funds in the event of 
 #### DPO (Direct Public Offering)
 A DPO is similar to an initial public offering (IPO) in that securities, such as stock or debt, are sold to investors, but unlike an IPO, a company uses a DPO to raise capital directly and without a "firm underwriting" from an investment banking firm or broker-dealer.
 
+#### GDPR (General Data Protection Regulation)
+The General Data Protection Regulation (EU) is a regulation in EU law on data protection and privacy in the European Union (EU) and the European Economic Area (EEA). It also addresses the transfer of personal data outside the EU and EEA areas. The GDPR aims primarily to give control to individuals over their personal data and to simplify the regulatory environment for international business by unifying the regulation within the EU. Superseding the Data Protection Directive 95/46/EC, the regulation contains provisions and requirements related to the processing of personal data of individuals (formally called data subjects in the GDPR) who reside in the EEA, and applies to any enterprise—regardless of its location and the data subjects' citizenship or residence—that is processing the personal information of data subjects inside the EEA.
+
 #### HPI (Home Price Index)
 A house price index measures the price changes of residential housing as a percentage change from some specific start date (which has HPI of 100). Methodologies commonly used to calculate a HPI are the hedonic regression (HR), simple moving average (SMA) and repeat-sales regression (RSR).
 
@@ -38,11 +44,26 @@ In an IPO, new shares of the company are created, and are underwritten by an int
 #### Latency
 The delay before a transfer of data begins following an instruction for its transfer.
 
+#### MdAPE
+Calculates the median absolute percentage error (MdAPE) between the forecast and the eventual outcomes.
+
 #### PREC (Personal Real Estate Corporation)
 Personal real estate corporations allow real estate licensees to access the business advantages of incorporation, including better planning of income and tax streams.
 
+#### Semver (Semantic Versioning)
+Given a version number MAJOR.MINOR.PATCH, increment the:
+
+1. MAJOR version when you make incompatible API changes.
+2. MINOR version when you add functionality in a backwards compatible manner.
+3. PATCH version when you make backwards compatible bug fixes.
+
+Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
+
 #### SHA (Secure Hash Algorithm)  
 These algorithms are designed to be one-way functions, meaning that once they’re transformed into their respective hash values, it’s virtually impossible to transform them back into the original data.
+
+#### Thrashing
+In computer science, thrashing occurs when a computer's virtual memory resources are overused, leading to a constant state of paging and page faults, inhibiting most application-level processing. This causes the performance of the computer to degrade or collapse. The situation can continue indefinitely until either the user closes some running applications or the active processes free up additional virtual memory resources.
 
 #### UTM (Urchin Tracking Module)  
 Parameters are five variants of URL parameters used by marketers to track the effectiveness of online marketing campaigns across traffic sources and publishing media.  
