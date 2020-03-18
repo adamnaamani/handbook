@@ -2,7 +2,9 @@
 
 ## Table of Contents
 1. [Setup](#setup)
-2. [Features](#features)
+1. [Features](#features)
+1. [Testing Behaviour](#testing-behaviour)
+1. [World](#world)
 
 ## Setup
 ```

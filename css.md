@@ -1,6 +1,8 @@
 # CSS
 
 ## Table of Contents
+1. [Variables](#variables)
+1. [Tabular](#tabular)
 
 ## Variables
 ```css

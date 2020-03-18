@@ -2,6 +2,8 @@
 
 ## Table of Contents
 1. [Postgres](#postgres)
+1. [Rails Console](#rails-console)
+1. [Logs](#logs)
 
 ## Postgres
 ```bash

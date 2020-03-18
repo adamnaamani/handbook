@@ -1,12 +1,26 @@
 # Rspec
 
 ## Table of Contents
-[Components](#components)  
-[Conventions](#conventions)  
-[Methods](#methods)  
-[Definitions](#definitions)  
-[Factory Bot](#factory-bot)  
-[Traits](#traits)
+1. [Components](#components)  
+1. [Methods](#methods)  
+1. [Conventions](#conventions)  
+1. [Definitions](#definitions)  
+1. [Factory Bot](#factory-bot)  
+1. [Variables](#variables)
+1. [Error Messages](#error-messages)
+1. [Before](#before)
+1. [Shared Example and Context](#shared-example-and-context)
+1. [Defining Custom Objects](#defining-custom-objects)
+1. [Described Class](#described-class)
+1. [Subject](#subject)
+1. [Testing](#testing)
+1. [Matchers](#matchers)
+1. [Compound Expectations](#compound-expectations)
+1. [Mocks](#mocks)
+1. [Expect vs. Allow](#expect-vs-allow)
+1. [Receive](#receive)
+1. [Matching Arguments](#matching-arguments)
+1. [Traits](#traits)
 
 ## Components
 * `rspec-core`: command-line program
@@ -95,7 +109,7 @@ subject { "hello" }
 ## Described Class
 `described_class` dynamically references the class being tested (the one passed as an argument to the top-level describe method). The advantage is that, if the class name changes, the rest of the spec does not have to change.
 
-## The Subject
+## Subject
 * The subject equals an instance of the class under test.
 * Subject is basically: `let(:subject) { Hash.new }` behind the scenes.
 * One Liner Syntax: `it { is_expected.to eq(…) }`. It being subject.

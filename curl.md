@@ -1,6 +1,7 @@
 # cURL
 
 ## Table of Contents
+1. [Flags](#flags)
 
 ## Flags
 ```bash

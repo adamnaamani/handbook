@@ -1,22 +1,22 @@
 # Ruby on Rails
 
 ## Table of Contents
-[Statistics](#statistics)  
-[Debugging](#debugging)  
-[Namespaces](#namespaces)  
-[Migrations](#migrations)  
-[Associations](#associations)  
-[Methods](#methods)  
-[Lambda](#lambda)  
-[Arguments](#arguments)
-[Heredoc](#heredoc)
-[Attributes](#attributes)  
-[Interpolation](#interpolation)
-[Navigators](#navigators)
-[Store](#store)  
-[Internationalization](#internationalization)  
-[Validations](#validations)  
-[Errors](#errors)
+1. [Statistics](#statistics)  
+1. [Debugging](#debugging)  
+1. [Namespaces](#namespaces)  
+1. [Migrations](#migrations)  
+1. [Associations](#associations)  
+1. [Methods](#methods)  
+1. [Lambda](#lambda)  
+1. [Arguments](#arguments)
+1. [Heredoc](#heredoc)
+1. [Attributes](#attributes)  
+1. [Interpolation](#interpolation)
+1. [Navigators](#navigators)
+1. [Store](#store)  
+1. [Internationalization](#internationalization)  
+1. [Validations](#validations)  
+1. [Errors](#errors)
 
 ## Statistics
 `rails stats`

@@ -2,12 +2,17 @@
 
 ## Table of Contents
 1. [Enzyme](#enzyme)
-    1. [Shallow](#shallow)
-    1. [Mount](#mount)
+    1. [shallow](#shallow)
+    1. [mount](#mount)
 1. [Methods](#methods)
-    1. [Describe](#describe)
+    1. [describe](#describe)
+    1. [it](#it)
 1. [Expectations](#expectations)    
+1. [Snapshots](#snapshots)
 1. [Debugging](#debugging)
+1. [Instances](#instances)
+    1. [Stateful](#stateful)
+    1. [Stateless](#stateless)
 1. [Act](#act)
 
 ## Enzyme
@@ -33,7 +38,9 @@
   ```
 
 ## Expectations
-
+```javascript
+expect(component.find('Node').exists()).toBeTruthy()
+```
 
 ## Snapshots
 ```javascript

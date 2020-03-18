@@ -1,6 +1,9 @@
 # Javascript
 
 ## Table of Contents
+1. [Debugger](#debugger)
+1. [Radix](#radix)
+1. [Booleans](#booleans)
 
 ## Debugger
 ```javascript

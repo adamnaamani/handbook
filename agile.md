@@ -1,14 +1,51 @@
 # Agile Development
 
 ## Table of Contents
-1. Tools
-2. Agile Manifesto
-3. Sprint Planning
-4. Standup
-5. Pair Programming
-6. Code Review
+1. [Agile Manifesto](#agile-manifesto)
+1. [Tools](#tools)
+1. [Sprint Planning](#sprint-planning)
+1. [Standup](#standup)
+1. [Pair Programming](#pair-programming)
+1. [Code Review](#code-review)
+
+## Agile Manifesto
+Our highest priority is to satisfy the customer through early and continuous delivery of valuable software.
+
+Welcome changing requirements, even late in development. Agile processes harness change for the customer's competitive advantage.
+
+Deliver working software frequently, from a couple of weeks to a couple of months, with a preference to the shorter timescale.
+
+Business people and developers must work together daily throughout the project.
+
+Build projects around motivated individuals. Give them the environment and support they need, and trust them to get the job done.
+
+The most efficient and effective method of conveying information to and within a development team is face-to-face conversation.
+
+Working software is the primary measure of progress.
+
+Agile processes promote sustainable development. The sponsors, developers, and users should be able to maintain a constant pace indefinitely.
+
+Continuous attention to technical excellence and good design enhances agility.
+
+Simplicity--the art of maximizing the amount of work not done--is essential.
+
+The best architectures, requirements, and designs emerge from self-organizing teams.
+
+At regular intervals, the team reflects on how to become more effective, then tunes and adjusts its behavior accordingly.
+
+## Tools
+WIP
+
+## Sprint Planning
+WIP
 
 ## Standup
 * Try not to make it a roll call.
 * Comment on performance metrics, and suggestions for improvement.
 * Suggest pairing between developers.
+
+## Pair Programming
+WIP
+
+## Code Review
+WIP
