@@ -4,6 +4,7 @@
 1. [SQL](#sql)
     1. [Entity Relationship](#entity-relationship-model)
     1. [Keys](#keys)
+    1. [Indexes](#indexes)
     1. [Temporary Tables](#temporary-tables)
     1. [Comments](#comments)
     1. [Filtering](#filtering)
@@ -199,7 +200,7 @@ Allows matching of strings based on comparison with a pattern (case-insensitive)
   ```
 
 ### PostGIS
-Create the extension  
+Create the extension:  
 ```sql
 CREATE EXTENSION postgis;
 ```
