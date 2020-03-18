@@ -162,9 +162,21 @@ property.listings.build
   #=> {"a"=>1, "b"=>2, "c"=>1}
   ```
 * `.eager`  
-  Generates a non-lazy enumerator from a lazy enumerator.
-  
+  Released in Ruby 2.7. Generates a non-lazy enumerator from a lazy enumerator.  
+  ```ruby
+  a = %w(foo bar baz)
+  e = a.lazy.map {|x| x.upcase }.map {|x| x + "!" }.eager
+  p e.class               #=> Enumerator
+  p e.map {|x| x + "?" }  #=> ["FOO!?", "BAR!?", "BAZ!?"]
+  ```
+* `.update_columns`  
+  Updates the attributes directly in the database issuing an UPDATE SQL statement and sets them in the receiver. This is the fastest way to update attributes because it goes straight to the database, but take into account that in consequence the regular update procedures are totally bypassed.    
+  ```ruby
+  user.update_columns(last_request_at: Time.current)
+  ```
 
+## Services
+Services have contracts that define their inputs and outputs. In many cases, a Create service should return the object, either persisted (without errors) or not (with errors, accessible for the service caller).    
 
 ## Lambda
 Anonymous function

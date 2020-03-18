@@ -47,6 +47,11 @@ The delay before a transfer of data begins following an instruction for its tran
 #### MdAPE
 Calculates the median absolute percentage error (MdAPE) between the forecast and the eventual outcomes.
 
+#### Neural Network
+Artificial neural networks (ANN) or connectionist systems are computing systems vaguely inspired by the biological neural networks that constitute animal brains. Such systems "learn" to perform tasks by considering examples, generally without being programmed with task-specific rules. For example, in image recognition, they might learn to identify images that contain cats by analyzing example images that have been manually labeled as "cat" or "no cat" and using the results to identify cats in other images. They do this without any prior knowledge of cats, for example, that they have fur, tails, whiskers and cat-like faces. Instead, they automatically generate identifying characteristics from the examples that they process.
+
+An ANN is based on a collection of connected units or nodes called artificial neurons, which loosely model the neurons in a biological brain. Each connection, like the synapses in a biological brain, can transmit a signal to other neurons. An artificial neuron that receives a signal then processes it and can signal neurons connected to it.
+
 #### PREC (Personal Real Estate Corporation)
 Personal real estate corporations allow real estate licensees to access the business advantages of incorporation, including better planning of income and tax streams.
 
@@ -61,6 +66,13 @@ Additional labels for pre-release and build metadata are available as extensions
 
 #### SHA (Secure Hash Algorithm)  
 These algorithms are designed to be one-way functions, meaning that once they’re transformed into their respective hash values, it’s virtually impossible to transform them back into the original data.
+
+#### Stochastic Gradient Descent
+stochastic | stəˈkastɪk |  
+adjective _technical_  
+Having a random probability distribution or pattern that may be analysed statistically but may not be predicted precisely.
+
+An iterative method for optimizing an objective function with suitable smoothness properties (e.g. differentiable or subdifferentiable). It can be regarded as a stochastic approximation of gradient descent optimization, since it replaces the actual gradient (calculated from the entire data set) by an estimate thereof (calculated from a randomly selected subset of the data). Especially in big data applications this reduces the computational burden, achieving faster iterations in trade for a slightly lower convergence rate.
 
 #### Thrashing
 In computer science, thrashing occurs when a computer's virtual memory resources are overused, leading to a constant state of paging and page faults, inhibiting most application-level processing. This causes the performance of the computer to degrade or collapse. The situation can continue indefinitely until either the user closes some running applications or the active processes free up additional virtual memory resources.
