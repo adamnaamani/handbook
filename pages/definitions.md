@@ -52,6 +52,9 @@ Artificial neural networks (ANN) or connectionist systems are computing systems 
 
 An ANN is based on a collection of connected units or nodes called artificial neurons, which loosely model the neurons in a biological brain. Each connection, like the synapses in a biological brain, can transmit a signal to other neurons. An artificial neuron that receives a signal then processes it and can signal neurons connected to it.
 
+#### Op-ed
+Short for "opposite the editorial page", is a written prose piece typically published by a newspaper or magazine which expresses the opinion of an author usually not affiliated with the publication's editorial board. Op-eds are different from both editorials and letters to the editor.
+
 #### PREC (Personal Real Estate Corporation)
 Personal real estate corporations allow real estate licensees to access the business advantages of incorporation, including better planning of income and tax streams.
 
