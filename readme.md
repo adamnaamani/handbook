@@ -16,6 +16,7 @@
 1. [Javascript](/pages/javascript.md)
 1. [Jest](/pages/jest.md)
 1. [Node](/pages/node.md)
+1. [Python](/pages/python.md)
 1. [React](/pages/react.md)
 1. [Rspec](rspec.md)
 1. [Ruby on Rails](/pages/ruby-on-rails.md)

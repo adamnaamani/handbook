@@ -70,6 +70,9 @@ Additional labels for pre-release and build metadata are available as extensions
 #### SHA (Secure Hash Algorithm)  
 These algorithms are designed to be one-way functions, meaning that once they’re transformed into their respective hash values, it’s virtually impossible to transform them back into the original data.
 
+#### Smoke testing
+In computer programming and software testing, smoke testing (also confidence testing, sanity testing, build verification test and build acceptance test) is preliminary testing to reveal simple failures severe enough to, for example, reject a prospective software release.
+
 #### Stochastic Gradient Descent
 stochastic | stəˈkastɪk |  
 adjective _technical_  
