@@ -10,6 +10,7 @@
 1. [pip3](#pip3)
 1. [python3](#python3)
 1. [Django](#Django)
+    1. [Shortcuts](#shortcuts)
 1. [Field Types](#field-types)
 1. [Methods](#methods)
 1. [Objects](#objects)
@@ -25,6 +26,7 @@ pip3 install django
 ## python3
 ```bash
 python3 -m django --version
+python3 manage.py makemigrations
 python3 manage.py migrate
 python3 manage.py startapp <name>
 ```
@@ -32,6 +34,49 @@ python3 manage.py startapp <name>
 ## Django
 ```bash
 django-admin startproject <name>
+```
+
+### Shortcuts
+Commands to shorten `python3 manage.py` scripts:
+```bash
+$ pip3 install django-shortcuts
+$ django <command or shortcut>
+```
+```bash
+# Django
+'c'  : 'collectstatic',
+'r'  : 'runserver',
+'sd' : 'syncdb',
+'sp' : 'startproject',
+'sa' : 'startapp',
+'t'  : 'test',
+
+# Shell
+'d'  : 'dbshell',
+'s'  : 'shell',
+
+# Auth
+'csu': 'createsuperuser',
+'cpw': 'changepassword',
+
+# South
+'m'  : 'migrate',
+'mm' : 'makemigrations',
+'sm' : 'schemamigration',
+'dm' : 'datamigration',
+
+# Haystack
+'ix' : 'update_index',
+'rix': 'rebuild_index',
+
+# Django Extensions
+'sk' : 'generate_secret_key',
+'rdb': 'reset_db',
+'rp' : 'runserver_plus',
+'shp': 'shell_plus',
+'url': 'show_urls',
+'gm' : 'graph_models',
+'rs' : 'runscript'
 ```
 
 ## Field Types
