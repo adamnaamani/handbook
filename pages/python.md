@@ -117,7 +117,7 @@ all_listings = Listing.objects.all()
 ## Filter
 Django's `filter()` method allows us to filter the returned `QuerySet` to match a specified text or numeric field against particular criteria.
 ```python
-condo_listings = Listing.objects.filter(property_type__contains='Apartment/Condo)
+condo_listings = Listing.objects.filter(property_type__contains='Apartment/Condo')
 ```
 
 ## Tuples
