@@ -30,6 +30,7 @@ python3 -m django --version
 python3 manage.py makemigrations
 python3 manage.py migrate
 python3 manage.py startapp <name>
+python3 manage.py createsuperuser
 ```
 
 ## Django
