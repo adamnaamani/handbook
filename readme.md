@@ -18,7 +18,7 @@
 1. [Node](/pages/node.md)
 1. [Python](/pages/python.md)
 1. [React](/pages/react.md)
-1. [Rspec](rspec.md)
+1. [Rspec](/rspec.md)
 1. [Ruby on Rails](/pages/ruby-on-rails.md)
 1. [Terminal](/pages/terminal.md)
 1. [Testing](/pages/testing.md)
