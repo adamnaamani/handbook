@@ -12,6 +12,8 @@
 1. [Django](#Django)
     1. [Shortcuts](#shortcuts)
 1. [Field Types](#field-types)
+1. [Init](#init)
+1. [Templates](#templates)
 1. [Functions](#functions)
 1. [Methods](#methods)
 1. [Objects](#objects)
@@ -100,6 +102,21 @@ A special type of **`IntegerField`** that automatically increments. A primary ke
 Used to specify a one-to-many relationship to another database model (e.g. a car has one manufacturer, but a manufacturer can make many cars). The "one" side of the relationship is the model that contains the "key" (models containing a "foreign key" referring to that "key", are on the "many" side of such a relationship).
 * **`ManyToManyField`**  
 Used to specify a many-to-many relationship (e.g. a book can have several genres, and each genre can contain several books). In our library app we will use these very similarly to **`ForeignKeys`**, but they can be used in more complicated ways to describe the relationships between groups. These have the parameter `on_delete` to define what happens when the associated record is deleted (e.g. a value of `models.SET_NULL` would simply set the value to `NULL`).
+
+## Init
+Marks directories as Python package directories:
+```python
+directory/__init__.py
+directory/module.py
+```
+Importing:
+```python
+import directory.module
+
+# or
+
+from directory import module
+```
   
 ## Templates  
 Django will automatically look for `.html` templates in a directory named `/templates/` in your application.
