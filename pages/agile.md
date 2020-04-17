@@ -2,7 +2,6 @@
 
 ## Table of Contents
 1. [Agile Manifesto](#agile-manifesto)
-1. [Tools](#tools)
 1. [Sprint Planning](#sprint-planning)
 1. [Standup](#standup)
 1. [Pairing & Mobbing](#pairing-&-mobbing)
