@@ -7,6 +7,11 @@
 ## Commands
 * `Ctrl+W`  
 Delete a word.
+* `Ctrl+R`  
+Search past commands.
+  ```bash
+  bck-i-search: _
+  ```
 
 ## Aliases
 * Glob  
