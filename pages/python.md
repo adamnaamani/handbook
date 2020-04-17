@@ -227,8 +227,8 @@ The Python interpreter supports many functions that are built-in: sixty-eight, a
 ## Methods
 * `static`  
 In Django's official documentation, it recommends that you keep all static files, such as images, videos, javascript files, CSS files, etc. in the static directory of the app you are using.  
-`context`  
-* variable, which is a Python dictionary, containing the data to insert into the placeholders.
+* `context`  
+Variable, which is a Python dictionary, containing the data to insert into the placeholders.
 
 ## Objects
 You can search for records that match certain criteria using the model's objects attribute (provided by the base class).
