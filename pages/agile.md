@@ -49,7 +49,7 @@ Mobbing involves multiple members of the team looking at the same codebase. Whil
 Favor asynchronous code review on platforms like [Github](https://github.com). Asynchronous meaning [Pull Requests](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests) can be reviewed when time allows, barring any hotfixes or impediments.
 
 * **Pull Requests**   
-Can trigger CI tests to run. Pull Requests should be atomic, and commits in a manageable size. 
+Can trigger CI tests to run. Pull Requests should be compartmentalized, and commits in a manageable size. 
 * **Milestones**  
 The overarching goal that encompasses all the Pull Requests related to the story. Makes it easy to search for commits.
 * **Tags**  

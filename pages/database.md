@@ -28,17 +28,17 @@ Composed of entity types and specifies relationships that can exist between inst
 * Show links (primary keys)
 
 ### Keys
-* Primary Key    
+* **Primary Key**      
 A column (or set of columns) whose values uniquely identify every row in the table.
 
-* Foreign Key  
+* **Foreign Key**  
 One or more columns that can be used together to identify a single row in another table.
 
 ### Indexes
-* Concurrent Indexing 
+* **Concurrent Indexing**   
 Creating an index can interfere with regular operation of a database. 
 `CONCURRENTLY` option of `CREATE INDEX`.
-* GIN
+* **GIN**  
 Best for static data, 3 times faster than GiST, takes 3 times longer to build than GiST
 
 ### Temporary Tables
@@ -93,37 +93,38 @@ WHERE column_name operator value;
 | IS NULL  | Is a null value            |
 
 ### Operators
-* Explain
+* **EXPLAIN**
   ```sql
   EXPLAIN(ANALYZE, COSTS, VERBOSE, BUFFERS)
   ```
-* In  
+* **IN**  
   Specifies a range of conditions with comma delimited list of values. Faster than `OR`. Order does not matter. Can contain another `SELECT`.  
   ```sql
   WHERE property_id IN (1, 2, 3);
   ```
-* Or  
+* **OR**  
   Second condition won't be evaluated if first condition is met.  
   ```sql
   WHERE property_id = 1 OR 2;
   ```  
-* Between
+* **BETWEEN**
   ```sql
   BETWEEN
   ```
-* Coalesce
+* **COALESCE**
   ```sql
   COALESCE
   ```
-* Union: combines the result sets of two queries.
+* **UNION**  
+Combines the result sets of two queries.
   ```sql
   UNION
   ```
-* Not
+* **NOT**
   ```sql
   WHERE NOT city = 'Vancouver';
   ```  
-* Not equal to
+* **<>**
   ```sql
   WHERE listings.type_of_dwelling <> 'Single Family Dwelling';
   ```    
@@ -194,7 +195,7 @@ Allows matching of strings based on comparison with a pattern (case-insensitive)
   @>
   ```
 * jsonb
-  ```postgres
+  ```sql
   -->
   -> 
   ```
