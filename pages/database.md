@@ -13,6 +13,7 @@
     1. [Sorting](#sorting)
     1. [Math Operations](#math-operations)
 1. [Postgres](#postgres)
+    1. [psql](#psql)
     1. [Operators](#operators)
     1. [PostGIS](#postgis)
 
@@ -189,6 +190,53 @@ Allows matching of strings based on comparison with a pattern (case-insensitive)
   ```  
 
 ## Postgres
+### psql
+Powerful command line tool bundled with Postgres.
+```bash
+$ psql
+```
+Commands:
+  * Connect:
+    ```bash
+    psql -d database -U  user -W
+    ```
+  * List databases:  
+    ```bash
+    postgres=# \l
+    ```
+  * Switch databases:
+    ```bash
+    postgres=# \c development_db
+    ```  
+  * List tables:
+    ```bash
+    postgres=# \dt
+    ```  
+  * Describe table:
+    ```bash
+    postgres=# \d table_name
+    ```  
+  * List available schema:
+    ```bash
+    postgres=# \dn
+    ```
+  * List available functions:
+    ```bash
+    postgres=# \df
+    ```
+  * List available views:
+    ```bash
+    postgres=# \dv   
+    ```
+  * List users and roles:
+    ```bash
+    postgres=# \du
+    ```
+  * Open editor:
+    ```bash
+    postgres=# \e
+    ```
+
 ### Operators
 * Contains
   ```sql

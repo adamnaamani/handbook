@@ -1,7 +1,22 @@
 # HTML
 
 ## Table of Contents
+1. [Tags](#tags)
 1. [Images](#images)
+
+## Tags
+```html
+<html>
+<head>
+<header>
+<body>
+<footer>
+<aside>
+<template>
+<table>
+<div>
+<p>
+```
 
 ## Images
 * srcset  

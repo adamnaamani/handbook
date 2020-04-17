@@ -6,6 +6,7 @@
 1. [Guides](#guides)
 1. [Tutorials](#tutorials)
 1. [Video](#video)
+1. [Photography](#photography)
 1. [Mockups](#mockups)
 
 ## Project Management
@@ -28,6 +29,9 @@
 ## Video
 * [Zoom](https://zoom.us)
 * [Google Meet](https://meet.google.com/)
+
+## Photography
+* [Nikon](https://www.nikonevents.com/us/live/nikon-school-online/)
 
 ## Mockups
 * [Figma](https://www.figma.com)
