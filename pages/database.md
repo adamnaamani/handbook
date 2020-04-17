@@ -19,7 +19,7 @@
 
 ## SQL
 ### Entity Relationship Model
-![ER Diagram](images/er-diagram.png)
+![ER Diagram](/images/er-diagram.png)
 
 Composed of entity types and specifies relationships that can exist between instances of those entity types.
 * Show relationships
