@@ -35,6 +35,9 @@ Also known as credit memo. Issued to indicate a return of funds in the event of 
 #### DPO (Direct Public Offering)
 A DPO is similar to an initial public offering (IPO) in that securities, such as stock or debt, are sold to investors, but unlike an IPO, a company uses a DPO to raise capital directly and without a "firm underwriting" from an investment banking firm or broker-dealer.
 
+#### Epochs
+An **epoch** is a term used in machine learning and indicates the number of passes through the entire training dataset the machine learning algorithm has completed.
+
 #### GDPR (General Data Protection Regulation)
 The General Data Protection Regulation (EU) is a regulation in EU law on data protection and privacy in the European Union (EU) and the European Economic Area (EEA). It also addresses the transfer of personal data outside the EU and EEA areas. The GDPR aims primarily to give control to individuals over their personal data and to simplify the regulatory environment for international business by unifying the regulation within the EU. Superseding the Data Protection Directive 95/46/EC, the regulation contains provisions and requirements related to the processing of personal data of individuals (formally called data subjects in the GDPR) who reside in the EEA, and applies to any enterprise—regardless of its location and the data subjects' citizenship or residence—that is processing the personal information of data subjects inside the EEA.
 
