@@ -14,12 +14,15 @@
 1. [Field Types](#field-types)
 1. [Init](#init)
 1. [Templates](#templates)
+1. [Static](#static)
 1. [Comments](#comments)
 1. [Functions](#functions)
 1. [Methods](#methods)
 1. [Objects](#objects)
 1. [Filter](#filter)
 1. [Tuples](#tuples)
+1. [Destructuring](#destructuring)
+1. [Formatting](#formatting)
 
 ## pip3
 ```bash
@@ -121,6 +124,9 @@ from directory import module
   
 ## Templates  
 Django will automatically look for `.html` templates in a directory named `/templates/` in your application.
+
+## Static
+In Django's official documentation, it recommends that you keep all static files, such as images, videos, javascript files, CSS files, etc. in the `static` directory of the app you are using.
 
 ## Comments
 To write a comment in Python, simply put the hash mark # before your desired comment:
@@ -239,9 +245,7 @@ The Python interpreter supports many functions that are built-in: sixty-eight, a
 | staticmethod() | Returns a static method for a function      |
 | __import__()   | Invoked by the import statement             |
 
-## Methods
-* `static`  
-In Django's official documentation, it recommends that you keep all static files, such as images, videos, javascript files, CSS files, etc. in the static directory of the app you are using.  
+## Methods  
 * `context`  
 Variable, which is a Python dictionary, containing the data to insert into the placeholders.
 
@@ -259,6 +263,8 @@ condo_listings = Listing.objects.filter(property_type__contains='Apartment/Condo
 
 ## Tuples
 A tuple is an immutable sequence of Python objects. The differences between tuples and lists are, the tuples cannot be changed unlike lists and tuples use parentheses, whereas lists use square brackets.
+
+Parentheses have nothing at all to do with tuples. It's the commas which tell Python something is a tuple: add brackets for readability.
 ```python
 LISTING_STATUS = (
     ('a', 'Active'),
@@ -267,3 +273,26 @@ LISTING_STATUS = (
     ('e', 'Expired'),
 )
 ```
+
+## Destructuring
+Destructuring (also called unpacking) is where we take a collection, like a list or a tuple, and we break it up into individual values.
+```python
+x, y = 5, 10
+```
+
+## Formatting
+### f-Strings
+A new and improved way to format strings in Python. Also called “formatted string literals,” f-strings are string literals that have an f at the beginning and curly braces containing expressions that will be replaced with their values.  
+```python
+name = 'Adam'
+
+# Lower or Uppercase 
+f"Hello, {name}."
+F"Hello, {name}."
+
+# Multiline
+message = (
+    f"Hi {name}. "
+    f"You are a {profession}. "
+)
+``` 

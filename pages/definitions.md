@@ -8,6 +8,9 @@ The following are definitions related to Tech, Programming, Real Estate, Busines
 #### ACH (Automated Clearing House)
 A network that coordinates electronic payments and automated money transfers. ACH is a way to move money between banks without using paper checks, wire transfers, credit card networks, or cash.
 
+#### Activation Function
+In artificial neural networks, the activation function of a node defines the output of that node given an input or set of inputs.
+
 #### Ad hoc
 Ad hoc is a Latin phrase meaning literally "to this". In English, it generally signifies a solution designed for a specific problem or task, non-generalizable, and not intended to be able to be adapted to other purposes.
 
