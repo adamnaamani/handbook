@@ -14,6 +14,7 @@
 1. [Field Types](#field-types)
 1. [Init](#init)
 1. [Templates](#templates)
+1. [Comments](#comments)
 1. [Functions](#functions)
 1. [Methods](#methods)
 1. [Objects](#objects)
@@ -120,6 +121,20 @@ from directory import module
   
 ## Templates  
 Django will automatically look for `.html` templates in a directory named `/templates/` in your application.
+
+## Comments
+To write a comment in Python, simply put the hash mark # before your desired comment:
+```python
+# This is a comment.
+```
+Multi-line strings:
+```python
+"""Return something
+Line One
+Line Two
+Line Three
+"""
+```
 
 ## Functions
 The Python interpreter supports many functions that are built-in: sixty-eight, as of Python 3.6.
