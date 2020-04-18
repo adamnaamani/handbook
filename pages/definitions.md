@@ -61,6 +61,9 @@ An ANN is based on a collection of connected units or nodes called artificial ne
 #### Op-ed
 Short for "opposite the editorial page", is a written prose piece typically published by a newspaper or magazine which expresses the opinion of an author usually not affiliated with the publication's editorial board. Op-eds are different from both editorials and letters to the editor.
 
+#### Optimization Algorithm
+By taking the observed data and a proposed model, we want to write an algorithm to learn the values for W and b which best fit the data and ultimately, by doing that, we learn an approximate function which maps the inputs to outputs of our data. This type of algorithm is called an optimization algorithm and there are a few different optimization algorithms that are typically used in training neural networks.
+
 #### PREC (Personal Real Estate Corporation)
 Personal real estate corporations allow real estate licensees to access the business advantages of incorporation, including better planning of income and tax streams.
 

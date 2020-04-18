@@ -1,5 +1,7 @@
 # Machine Learning
 
+With machine learning, what we are trying to do, essentially, is find out that if we are given a large amount of data (pairs of X and corresponding y), can we write an algorithm to figure out the optimal values of W and b? 
+
 ## Table of Contents
 1. [Courses](#courses)
 1. [Neural Networks](#neural-networks)
@@ -22,14 +24,18 @@
 * [Predicting House Prices with Regression](https://www.coursera.org/learn/tensorflow-beginner-predicting-house-prices-regression)
 
 ## Neural Networks
-### Rectifier (neural networks)
-The rectifier is the most commonly used activation function for deep neural networks. A unit employing the rectifier is also called a **Rectified Linear Unit** (`ReLU`).
+Artificial neural networks (ANN) or connectionist systems are computing systems vaguely inspired by the biological neural networks that constitute animal brains. Such systems "learn" to perform tasks by considering examples, generally without being programmed with task-specific rules.
+### Activation Functions
+There are various types of activation functions used in Neural Networks:
+* `ReLU`  
+The rectifier is the most commonly used activation function for deep neural networks. A unit employing the rectifier is also called a **Rectified Linear Unit** (ReLU).
+* `softmax`  
+This function gives us probability scores for various nodes, in this case 10 nodes of the output layer, which sum up to 1. This activation gives us the probabilities for various classes given the input. The class with the highest probability gives us our prediction.
 ### Learn-able parameters
 For any densely connected layer, the number of learn-able parameters are:
 ```python
 num_parameters = (nodes in current layer * nodes in previous layer) + nodes in current layer
 ```
-That means the first hidden layer has 10*5+10 = 60 parameters. The output layer has 2*10+2 = 22 parameters. Therefore, total 82 learn-able parameters.
 
 ## Pandas
 [pandas](https://pandas.pydata.org) is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.
