@@ -1,6 +1,7 @@
 # Jest
 
 ## Table of Contents
+1. [Commands](#commands)
 1. [Enzyme](#enzyme)
     1. [shallow](#shallow)
     1. [mount](#mount)
@@ -14,6 +15,12 @@
     1. [Stateful](#stateful)
     1. [Stateless](#stateless)
 1. [Act](#act)
+
+## Commands
+```bash
+npm test jest/
+npm test --updateSnapshot
+```
 
 ## Enzyme
 * Shallow  

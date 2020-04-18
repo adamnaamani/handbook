@@ -1,9 +1,16 @@
 # Javascript
 
 ## Table of Contents
+1. [Linting](#linting)
 1. [Debugger](#debugger)
 1. [Radix](#radix)
 1. [Booleans](#booleans)
+
+## Linting
+* ESLint
+```bash
+./node_modules/.bin/eslint --ext .js,.jsx ‘folder/‘
+```
 
 ## Debugger
 ```javascript

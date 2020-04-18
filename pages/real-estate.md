@@ -74,7 +74,7 @@ On the evidence appearing in the record, Gonthier J. and his concurring colleagu
 * 20%.
 
 ## Tenancy
-* 4.5% maximum allowable annual increase
+* 4.5% maximum allowable annual increase.
 * Landlord can’t evict tenant for refusing to sign new lease.
 * Once a lease has ended, rental agreement is month-to-month, unless sublease, or family member moves in.
 
@@ -83,8 +83,8 @@ On the evidence appearing in the record, Gonthier J. and his concurring colleagu
 
 ## Trading
 ### UBC Sauder Course
-* Applied Practice Course $875.00 + GST
-* Licensing Fee (2-year Term) $1,360.00
+* Applied Practice Course $875.00 + GST.
+* Licensing Fee (2-year Term) $1,360.00.
 ### Costs
 * Lawyer/Notary fees
 * Land Title registration fees

@@ -5,6 +5,7 @@
 ## Table of Contents
 1. [Agile Development](/pages/agile.md)
 1. [CSS](/pages/css.md)
+1. [Commands](/pages/commands.md)
 1. [Cucumber](/pages/cucumber.md)
 1. [Curl](/pages/curl.md)
 1. [Database](/pages/database.md)
@@ -24,4 +25,5 @@
 1. [Ruby on Rails](/pages/ruby-on-rails.md)
 1. [Terminal](/pages/terminal.md)
 1. [Testing](/pages/testing.md)
+1. [UI/UX](/pages/ui-ux.md)
 1. [Web API](/pages/web-api.md)
