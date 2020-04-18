@@ -14,6 +14,8 @@
    1. [Convert Label Value](#3-convert-label-value)
    1. [Training and Test Sets](#4-training-and-test-sets)
    1. [Create the Model](#create-the-model)
+   1. [Model Training](#model-training)
+   1. [Predictions](#predictions)
 
 ## Courses
 ### Coursera
