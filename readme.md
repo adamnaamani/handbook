@@ -1,6 +1,6 @@
 # Handbook
 
-![City](https://images.unsplash.com/photo-1501883824620-a2c97e2e319c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3150&q=80)
+![Smart Home](/images/smart-home-automated-valuation.png)
 
 ## Table of Contents
 1. [Agile Development](/pages/agile.md)

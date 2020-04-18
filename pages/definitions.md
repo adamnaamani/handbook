@@ -41,6 +41,9 @@ An **epoch** is a term used in machine learning and indicates the number of pass
 #### GDPR (General Data Protection Regulation)
 The General Data Protection Regulation (EU) is a regulation in EU law on data protection and privacy in the European Union (EU) and the European Economic Area (EEA). It also addresses the transfer of personal data outside the EU and EEA areas. The GDPR aims primarily to give control to individuals over their personal data and to simplify the regulatory environment for international business by unifying the regulation within the EU. Superseding the Data Protection Directive 95/46/EC, the regulation contains provisions and requirements related to the processing of personal data of individuals (formally called data subjects in the GDPR) who reside in the EEA, and applies to any enterprise—regardless of its location and the data subjects' citizenship or residence—that is processing the personal information of data subjects inside the EEA.
 
+#### Hedonic Regression
+Breaks down the item being researched into its constituent characteristics, and obtains estimates of the contributory value of each characteristic.
+
 #### HPI (Home Price Index)
 A house price index measures the price changes of residential housing as a percentage change from some specific start date (which has HPI of 100). Methodologies commonly used to calculate a HPI are the hedonic regression (HR), simple moving average (SMA) and repeat-sales regression (RSR).
 
