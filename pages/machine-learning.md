@@ -9,6 +9,8 @@ With machine learning, what we are trying to do, essentially, is find out that i
 ## Table of Contents
 1. [Courses](#courses)
 1. [Neural Networks](#neural-networks)
+1. [Data Products](#data-products)
+1. [Recommender Systems](#recommender-systems)
 1. [Pandas](#pandas)
 1. [scikit-learn](#scikit-learn)
 1. [keras](#keras)
@@ -40,6 +42,35 @@ For any densely connected layer, the number of learn-able parameters are:
 ```python
 num_parameters = (nodes in current layer * nodes in previous layer) + nodes in current layer
 ```
+
+## Data Products
+Arises when we want to build systems that depend on predictive models.
+* Predict users' future actions based on their past activities.
+* Recommend content to users that they are likely to consume.
+* Estimate demand for a product.
+### Data Strategy
+1. Aim
+1. Policy
+1. Plan
+1. Action
+### Business Objectives
+* Start with business objectives
+* Educate yourself
+* Identify the opportunity
+* Analyze gaps
+* Prioritize actions
+### Data-oriented Culture
+* Remove barriers to data access
+* No data silos
+* Data sharing mindset
+* Foster collaborations
+
+## Recommender Systems
+Recommender Systems work by trying to model the relationships between people and the items they’re evaluating.
+### Regression and classification tasks
+* Time series modeling
+* Text analysis
+* Visualization
 
 ## Pandas
 [pandas](https://pandas.pydata.org) is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.

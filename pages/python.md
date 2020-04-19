@@ -18,6 +18,7 @@
 1. [Comments](#comments)
 1. [Functions](#functions)
 1. [Methods](#methods)
+1. [Variables](#variables)
 1. [Objects](#objects)
 1. [Filter](#filter)
 1. [Tuples](#tuples)
@@ -248,6 +249,14 @@ The Python interpreter supports many functions that are built-in: sixty-eight, a
 ## Methods  
 * `context`  
 Variable, which is a Python dictionary, containing the data to insert into the placeholders.
+
+## Variables
+In Python, variables do not have explicitly defined types. Python dynamically typecasts your variables for you. Some common types:
+* **Numeric**: integers, float, complex
+* **Sequence**: list, tuple, range
+* **Binary**: byte, bytearray
+* **True**/False: bool
+* **Text**: string (immutable)
 
 ## Objects
 You can search for records that match certain criteria using the model's objects attribute (provided by the base class).

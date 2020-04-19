@@ -32,6 +32,9 @@ Canada Mortgage and Housing Corporation is a Crown Corporation of the Government
 #### Credit Note
 Also known as credit memo. Issued to indicate a return of funds in the event of an invoice error, incorrect or damaged products, purchase cancellation, or otherwise specified circumstance.
 
+#### Derived Data
+Data after it has been cleaned and prepared for analysis.
+
 #### DPO (Direct Public Offering)
 A DPO is similar to an initial public offering (IPO) in that securities, such as stock or debt, are sold to investors, but unlike an IPO, a company uses a DPO to raise capital directly and without a "firm underwriting" from an investment banking firm or broker-dealer.
 
