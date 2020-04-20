@@ -430,7 +430,9 @@ import string
 use (for e.g.) to get the list of punctuation tokens.
 * We have to use join to convert the output back to a string.
 ```python
-string.punctuation
+>>> import string
+>>> string.punctuation
+'!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'
 ```
 
 ## Time and Date

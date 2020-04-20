@@ -12,6 +12,7 @@ With machine learning, what we are trying to do, essentially, is find out that i
 1. [Data Products](#data-products)
 1. [Preprocessing](#preprocessing)
 1. [Recommender Systems](#recommender-systems)
+1. [NumPy](#numpy)
 1. [Pandas](#pandas)
 1. [scikit-learn](#scikit-learn)
 1. [keras](#keras)
@@ -81,6 +82,26 @@ Recommender Systems work by trying to model the relationships between people and
 * Time series modeling
 * Text analysis
 * Visualization
+
+## NumPy
+[`NumPy`](https://numpy.org) is the fundamental package for scientific computing with Python. It contains among other things:
+* A powerful N-dimensional array object.
+* Sophisticated (broadcasting) functions.
+* Tools for integrating C/C++ and Fortran code.
+* Useful linear algebra, Fourier transform, and random number capabilities.
+
+```python
+import numpy
+```
+* **Arrays**  
+  Can be treated much like regular Python arrays, though they support a variety of additional operations, such as statistical operations:  
+  ```python
+  numpy.array()
+  ```
+* `numpy.mean()`
+* `numpy.var()`
+* `numpy.stack()`
+* `numpy.matrix()`
 
 ## Pandas
 [pandas](https://pandas.pydata.org) is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.
