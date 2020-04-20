@@ -1,14 +1,23 @@
 # Python
 
-"It was designed with an emphasis on code readability, and its syntax allows programmers to express their concepts in fewer lines of code."
+> "It was designed with an emphasis on code readability, and its syntax allows programmers to express their concepts in fewer lines of code."
 
-"Python is the main dynamic language used at Google."
+> "Python is the main dynamic language used at Google."
 
-"Used at NASA, Quora, Amazon, Reddit, Netflix, Dropbox, and Instagram."
+> "Used at NASA, Quora, Amazon, Reddit, Netflix, Dropbox, and Instagram."
+
+Python is powerful...and fast;  
+plays well with others;  
+runs everywhere;  
+is friendly and easy to learn;  
+is Open.  
+
+Interpreted, not compiled. Dynamically Typed. Object-Oriented.
 
 ## Table of Contents
 1. [pip3](#pip3)
 1. [python3](#python3)
+1. [Jupyter](#jupyter)
 1. [Django](#Django)
     1. [Shortcuts](#shortcuts)
 1. [Field Types](#field-types)
@@ -24,6 +33,8 @@
 1. [Tuples](#tuples)
 1. [Destructuring](#destructuring)
 1. [Formatting](#formatting)
+1. [CSV and JSON](#csv-and-json)
+1. [defaultdict](#defaultdict)
 
 ## pip3
 ```bash
@@ -39,6 +50,19 @@ python3 manage.py migrate
 python3 manage.py startapp <name>
 python3 manage.py createsuperuser
 ```
+
+## Jupyter
+> Project [Jupyter](https://jupyter.org) exists to develop open-source software, open-standards, and services for interactive computing across dozens of programming languages.
+
+The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more.
+
+* Documented Data Science
+* Reproducible results
+* Presentation of results
+* Support for Julia, Python, and R
+
+### Commands
+* `shift+enter`: Run
 
 ## Django
 ```bash
@@ -305,3 +329,89 @@ message = (
     f"You are a {profession}. "
 )
 ``` 
+
+## CSV and JSON
+Two formats that are easy to read and manipulate in Python.
+
+### CSV
+* CSV is a simple format that allows us to store tabular data.
+* It is a human-readable format, meaning it can easily be read or written
+via a text-editor or spreadsheet application.
+
+#### `CSV.reader`
+```python
+import csv
+
+path = "datasets/file.tsv"
+f = open(path)
+reader = csv.reader(f, delimiter = '\t')
+next(reader)
+```
+
+#### Reading line by line
+```python
+dataset = []
+for line in reader:
+    line = line[:-3]
+    if line[-1] == 'Y':
+        dataset.append(line)
+dataset[0]        
+```
+
+### JSON
+JavaScript Object Notation (JSON) is a standard text-based format for representing structured data based on JavaScript object syntax.
+
+#### eval()
+The `eval` function just treats an arbitrary string as if it were Python code.
+```python
+path = "datasets/file.json"
+f = open(path)
+line = f.readline()
+line
+
+d = eval(line)
+d
+d['user_id']
+```
+
+#### json
+```python
+import json
+
+json.loads(line)
+```
+```python
+path = "datasets/file.json"
+
+f = open(path, 'r', encoding = 'utf8')
+
+lines = []
+for i in range(5000):
+    lines.append(f.readline())
+lines[0]
+```
+
+### gzip
+```python
+import gzip
+path = "datasets/file.tsv.gz"
+f = gzip.open(path, 'rt')
+
+import csv
+reader = csv.reader(f, delimiter = '\t')
+header = next(reader)
+header
+```
+
+## defaultdict
+The `defaultdict` structure from the `collections` library allows us to automate this functionality, which is useful for counting different types of object.
+```python
+from collections import defaultdict
+
+ratingCounts = defaultdict(int)
+
+for d in dataset:
+    ratingCounts[d['star_rating']] += 1
+
+ratingCounts
+```
