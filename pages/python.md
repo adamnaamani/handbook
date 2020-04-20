@@ -34,6 +34,8 @@ Interpreted, not compiled. Dynamically Typed. Object-Oriented.
 1. [Destructuring](#destructuring)
 1. [Formatting](#formatting)
 1. [CSV and JSON](#csv-and-json)
+1. [Strings](#strings)
+1. [Time and Date](#time-and-date)
 1. [defaultdict](#defaultdict)
 
 ## pip3
@@ -401,6 +403,52 @@ import csv
 reader = csv.reader(f, delimiter = '\t')
 header = next(reader)
 header
+```
+
+## Strings
+```python
+import string
+```
+* `.split()`
+* `.join()`
+* `.lower()`
+* `.upper()`
+* `.index()`
+* `.find()`
+* `.count()`
+* `.startswith()`
+* `.isalpha()`
+* `.strip()`
+
+### Punctuation
+* We can remove punctuation by performing a list comprehension on the string.
+* The "string" library contains utility functions that we can
+use (for e.g.) to get the list of punctuation tokens.
+* We have to use join to convert the output back to a string.
+```python
+string.punctuation
+```
+
+## Time and Date
+| Function      | Description                                    |
+|---------------|------------------------------------------------|
+| Time.strptime | Convert time string to structured time object. |
+| Time.strftime | Convert time object to string.                 |
+| Time.mktime   | Convert time object to number.                 |
+| Time.gmtime   | Convert number to time object.                 |
+
+The value (Unix time) is the number of seconds since Jan 1, 1970 in the UTC timezone.
+
+```python
+import time
+import calendar
+
+timeString = "2020-04-20 09:34:00"
+timeStruct = time.strptime(timeString, "%Y-%m-%d %H:%M:%S")
+timeStruct
+
+timeStruct.tm_wday
+help(time.strptime)
 ```
 
 ## defaultdict

@@ -10,6 +10,7 @@ With machine learning, what we are trying to do, essentially, is find out that i
 1. [Courses](#courses)
 1. [Neural Networks](#neural-networks)
 1. [Data Products](#data-products)
+1. [Preprocessing](#preprocessing)
 1. [Recommender Systems](#recommender-systems)
 1. [Pandas](#pandas)
 1. [scikit-learn](#scikit-learn)
@@ -64,6 +65,15 @@ Arises when we want to build systems that depend on predictive models.
 * No data silos
 * Data sharing mindset
 * Foster collaborations
+
+## Preprocessing
+Although the datasets we're working with have already been "cleaned" to some extent, in general there may be many reasons we'd want to further clean or pre-process datasets, e.g.:  
+* Certain fields may be missing from some entries.
+* Certain entries may be garbled / poorly formatted.
+* Parts of a dataset may be "stale" or otherwise unusable.
+* Parts of the dataset may contain statistical outliers (which we may or may not want to keep).
+* We may want to remove data pertaining to rare or inactive users.
+* May want to restrict our dataset to a certain demographic or region.
 
 ## Recommender Systems
 Recommender Systems work by trying to model the relationships between people and the items they’re evaluating.
