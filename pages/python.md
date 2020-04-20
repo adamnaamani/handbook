@@ -21,19 +21,19 @@ Interpreted, not compiled. Dynamically Typed. Object-Oriented.
 ## Table of Contents
 1. [pip3](#pip3)
 1. [python3](#python3)
-1. [Jupyter](#jupyter)
 1. [Django](#django)
     1. [Shortcuts](#shortcuts)
-1. [Field Types](#field-types)
-1. [Init](#init)
-1. [Templates](#templates)
-1. [Static](#static)
+    1. [Field Types](#field-types)
+    1. [Init](#init)
+    1. [Templates](#templates)
+    1. [Static](#static)
+    1. [Context](#context)
+    1. [Objects](#objects)
+    1. [Filter](#filter)
 1. [Comments](#comments)
 1. [Functions](#functions)
 1. [Methods](#methods)
 1. [Variables](#variables)
-1. [Objects](#objects)
-1. [Filter](#filter)
 1. [Tuples](#tuples)
 1. [Destructuring](#destructuring)
 1. [Formatting](#formatting)
@@ -41,6 +41,8 @@ Interpreted, not compiled. Dynamically Typed. Object-Oriented.
 1. [Strings](#strings)
 1. [Time and Date](#time-and-date)
 1. [defaultdict](#defaultdict)
+1. [urllib](#urllib)
+1. [BeautifulSoup](#beautiful-soup)
 
 ## pip3
 ```bash
@@ -56,19 +58,6 @@ python3 manage.py migrate
 python3 manage.py startapp <name>
 python3 manage.py createsuperuser
 ```
-
-## Jupyter
-> Project [Jupyter](https://jupyter.org) exists to develop open-source software, open-standards, and services for interactive computing across dozens of programming languages.
-
-The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more.
-
-* Documented Data Science
-* Reproducible results
-* Presentation of results
-* Support for Julia, Python, and R
-
-### Commands
-* `shift+enter`: Run
 
 ## Django
 ```bash
@@ -118,7 +107,7 @@ $ django <command or shortcut>
 'rs' : 'runscript'
 ```
 
-## Field Types
+### Field Types
 * **`CharField`**  
 Used to define short-to-mid sized fixed-length strings. You must specify the `max_length` of the data to be stored.
 * **`TextField`**  
@@ -138,7 +127,7 @@ Used to specify a one-to-many relationship to another database model (e.g. a car
 * **`ManyToManyField`**  
 Used to specify a many-to-many relationship (e.g. a book can have several genres, and each genre can contain several books). In our library app we will use these very similarly to **`ForeignKeys`**, but they can be used in more complicated ways to describe the relationships between groups. These have the parameter `on_delete` to define what happens when the associated record is deleted (e.g. a value of `models.SET_NULL` would simply set the value to `NULL`).
 
-## Init
+### Init
 Marks directories as Python package directories:
 ```python
 directory/__init__.py
@@ -153,11 +142,33 @@ import directory.module
 from directory import module
 ```
   
-## Templates  
+### Templates  
 Django will automatically look for `.html` templates in a directory named `/templates/` in your application.
 
-## Static
+### Static
 In Django's official documentation, it recommends that you keep all static files, such as images, videos, javascript files, CSS files, etc. in the `static` directory of the app you are using.
+
+### Context
+`context` is a variable, which is a Python dictionary, containing the data to insert into the placeholders:
+```python
+context = {
+    'key': 'value'
+}
+
+return render(request, "index.html", context)
+```
+
+### Objects
+You can search for records that match certain criteria using the model's objects attribute (provided by the base class).
+```python
+all_listings = Listing.objects.all()
+```
+
+### Filter
+Django's `filter()` method allows us to filter the returned `QuerySet` to match a specified text or numeric field against particular criteria.
+```python
+condo_listings = Listing.objects.filter(property_type__contains='Apartment/Condo')
+```
 
 ## Comments
 To write a comment in Python, simply put the hash mark # before your desired comment:
@@ -276,10 +287,6 @@ The Python interpreter supports many functions that are built-in: sixty-eight, a
 | staticmethod() | Returns a static method for a function      |
 | __import__()   | Invoked by the import statement             |
 
-## Methods  
-* `context`  
-Variable, which is a Python dictionary, containing the data to insert into the placeholders.
-
 ## Variables
 In Python, variables do not have explicitly defined types. Python dynamically typecasts your variables for you. Some common types:
 * **Numeric**: integers, float, complex
@@ -287,18 +294,6 @@ In Python, variables do not have explicitly defined types. Python dynamically ty
 * **Binary**: byte, bytearray
 * **True**/False: bool
 * **Text**: string (immutable)
-
-## Objects
-You can search for records that match certain criteria using the model's objects attribute (provided by the base class).
-```python
-all_listings = Listing.objects.all()
-```
-
-## Filter
-Django's `filter()` method allows us to filter the returned `QuerySet` to match a specified text or numeric field against particular criteria.
-```python
-condo_listings = Listing.objects.filter(property_type__contains='Apartment/Condo')
-```
 
 ## Tuples
 A tuple is an immutable sequence of Python objects. The differences between tuples and lists are, the tuples cannot be changed unlike lists and tuples use parentheses, whereas lists use square brackets.
@@ -468,4 +463,26 @@ for d in dataset:
     ratingCounts[d['star_rating']] += 1
 
 ratingCounts
+```
+
+## urllib
+```python
+from urllib.request import urlopen
+
+f = urlopen("https://website.com/page")
+html = str(f.read())
+html
+
+def parse_page(page):
+    d = {}
+    d['listings'] = listing.split('<div>')[1].split('</div')[0]
+```
+
+## BeautifulSoup
+[Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/) is a Python library for pulling data out of HTML and XML files. It works with your favorite parser to provide idiomatic ways of navigating, searching, and modifying the parse tree. It commonly saves programmers hours or days of work.
+```python
+from bs4 import BeautifulSoup
+
+soup = BeautifulSoup(listingDict[0]['listingBlock'])
+soup.text
 ```

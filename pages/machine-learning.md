@@ -12,11 +12,14 @@ With machine learning, what we are trying to do, essentially, is find out that i
 1. [Data Products](#data-products)
 1. [Preprocessing](#preprocessing)
 1. [Recommender Systems](#recommender-systems)
+1. [Jupyter](#jupyter)
 1. [NumPy](#numpy)
 1. [Pandas](#pandas)
 1. [scikit-learn](#scikit-learn)
 1. [keras](#keras)
 1. [TensorFlow](#tensorflow)
+1. [Visualization](#visualization)
+1. [matplotlib](#matplotlib)
 1. [Predicting House Prices](#predicting-house-prices)
    1. [Features](#features)
    1. [Check Missing Data](#1-check-missing-data)
@@ -83,6 +86,19 @@ Recommender Systems work by trying to model the relationships between people and
 * Text analysis
 * Visualization
 
+## Jupyter
+> Project [Jupyter](https://jupyter.org) exists to develop open-source software, open-standards, and services for interactive computing across dozens of programming languages.
+
+The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more.
+
+* Documented Data Science
+* Reproducible results
+* Presentation of results
+* Support for Julia, Python, and R
+
+### Commands
+* `shift+enter`: Run
+
 ## NumPy
 [`NumPy`](https://numpy.org) is the fundamental package for scientific computing with Python. It contains among other things:
 * A powerful N-dimensional array object.
@@ -101,7 +117,13 @@ import numpy
 * `numpy.mean()`
 * `numpy.var()`
 * `numpy.stack()`
+* `numpy.random()`
 * `numpy.matrix()`
+   * When multiplying matrices together.
+   * When performing complex mathematical expressions with matrices.
+* `numpy.eye()`
+   * The [`eye`](https://numpy.org/doc/stable/reference/generated/numpy.eye.html) command returns an identity matrix of floats.
+   * Return a 2-D array with ones on the diagonal and zeros elsewhere. 
 
 ## Pandas
 [pandas](https://pandas.pydata.org) is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language.
@@ -198,6 +220,41 @@ plot_model(model, to_file='model.png')
 [TensorFlow](https://www.tensorflow.org) is an end-to-end open source platform for Machine Learning. It has a comprehensive, flexible ecosystem of tools, libraries and community resources that lets researchers push the state-of-the-art in ML and developers easily build and deploy ML powered applications.  
 ```python
 import tensorflow as tf
+```
+
+## Visualization
+* Line plot
+   * Shows change in data over time
+   * Trend
+   * Cyclical pattern
+   * Compare variables
+* Histogram
+   * Shows distribution of numeric variable
+   * Skewness
+   * Central tendency
+   * Outliers
+* Scatter plot
+   * Shows relationship between two variables
+   * Correlation
+* Bar plot
+   * Shows distribution of categorical variable
+* Box plot
+   * Compares distributions of variables
+
+## matplotlib
+[`matplotlib`](https://matplotlib.org) is a comprehensive library for creating static, animated, and interactive visualizations in Python.
+* `plot(X, Y)`
+* `bar(X, Y)`
+```python
+import matplotlib.pyplot as plt
+
+plt.xlabel("Size")
+plt.ylabel("Price")
+plt.xticks([0,1,2],['0', '500', '1000'])
+plt.title("Predicted Price")
+plt.bar(X, Y)
+
+plt.show()
 ```
 
 ## Predicting House Prices
