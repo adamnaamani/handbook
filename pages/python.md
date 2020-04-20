@@ -1,5 +1,9 @@
 # Python
 
+<p align="center">
+  <img width="500" src="https://www.python.org/static/community_logos/python-logo-master-v3-TM.png">
+</p>
+
 > "It was designed with an emphasis on code readability, and its syntax allows programmers to express their concepts in fewer lines of code."
 
 > "Python is the main dynamic language used at Google."
@@ -18,7 +22,7 @@ Interpreted, not compiled. Dynamically Typed. Object-Oriented.
 1. [pip3](#pip3)
 1. [python3](#python3)
 1. [Jupyter](#jupyter)
-1. [Django](#Django)
+1. [Django](#django)
     1. [Shortcuts](#shortcuts)
 1. [Field Types](#field-types)
 1. [Init](#init)
