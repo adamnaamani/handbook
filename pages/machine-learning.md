@@ -131,17 +131,24 @@ import numpy
 import pandas as pd
 ```
 
-### `DataFrame.iloc`
-> Purely integer-location based indexing for selection by position.
+### Importing CSVs
+```python
+dataset = pd.read_csv('data.csv', names=column_names)
+dataset.head()
+```
+
+### `.iloc`
+Purely integer-location based indexing for selection by position.
 `.iloc[]` is primarily integer position based (from 0 to length-1 of the axis), but may also be used with a boolean array.
 ```python
 >>> type(df.iloc[0])
 ```
 
-### Importing CSVs
+### `.dropna`
+Remove missing values.
 ```python
-dataset = pd.read_csv('data.csv', names=column_names)
-dataset.head()
+df = pd.DataFrame(dataset)
+df.dropna(subset=['current_improvement_value', 'current_land_value'])
 ```
 
 ## Scikit-learn

@@ -43,6 +43,7 @@ Interpreted, not compiled. Dynamically Typed. Object-Oriented.
 1. [defaultdict](#defaultdict)
 1. [urllib](#urllib)
 1. [BeautifulSoup](#beautiful-soup)
+1. [Requests](#requests)
 
 ## pip3
 ```bash
@@ -392,6 +393,12 @@ for i in range(5000):
 lines[0]
 ```
 
+#### dumps
+Prettify json:
+```python
+json.dumps(record, indent=2)
+```
+
 ### gzip
 ```python
 import gzip
@@ -485,4 +492,20 @@ from bs4 import BeautifulSoup
 
 soup = BeautifulSoup(listingDict[0]['listingBlock'])
 soup.text
+```
+
+## Requests
+Requests allows you to send HTTP/1.1 requests extremely easily. There’s no need to manually add query strings to your URLs, or to form-encode your POST data. Keep-alive and HTTP connection pooling are 100% automatic, thanks to urllib3.
+```python
+>>> r = requests.get('https://api.github.com/user', auth=('user', 'pass'))
+>>> r.status_code
+200
+>>> r.headers['content-type']
+'application/json; charset=utf8'
+>>> r.encoding
+'utf-8'
+>>> r.text
+'{"type":"User"...'
+>>> r.json()
+{'private_gists': 419, 'total_private_repos': 77, ...}
 ```
