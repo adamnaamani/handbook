@@ -10,13 +10,15 @@
 
 > "Used at NASA, Quora, Amazon, Reddit, Netflix, Dropbox, and Instagram."
 
-Python is powerful...and fast;  
-plays well with others;  
-runs everywhere;  
-is friendly and easy to learn;  
-is Open.  
+---  
 
-Interpreted, not compiled. Dynamically Typed. Object-Oriented.
+_Python is powerful...and fast; plays well with others; runs everywhere; is friendly and easy to learn; is Open._  
+
+_Interpreted, not compiled. Dynamically Typed. Object-Oriented._
+
+---
+
+Code is read much more often than it is written. As PEP 20 says, "Readability counts". A style guide is about consistency. Consistency with this [style guide](https://www.python.org/dev/peps/pep-0008/) is important. Consistency within a project is more important. Consistency within one module or function is the most important.
 
 ## Table of Contents
 1. [pip3](#pip3)
@@ -30,6 +32,7 @@ Interpreted, not compiled. Dynamically Typed. Object-Oriented.
     1. [Context](#context)
     1. [Objects](#objects)
     1. [Filter](#filter)
+1. [Indentation](#indentation)
 1. [Comments](#comments)
 1. [Functions](#functions)
 1. [Methods](#methods)
@@ -169,6 +172,25 @@ all_listings = Listing.objects.all()
 Django's `filter()` method allows us to filter the returned `QuerySet` to match a specified text or numeric field against particular criteria.
 ```python
 condo_listings = Listing.objects.filter(property_type__contains='Apartment/Condo')
+```
+
+## Indentation
+Use 4 spaces per indentation level.
+```python
+# Aligned with opening delimiter.
+foo = long_function_name(var_one, var_two,
+                         var_three, var_four)
+
+# Add 4 spaces (an extra level of indentation) to distinguish arguments from the rest.
+def long_function_name(
+        var_one, var_two, var_three,
+        var_four):
+    print(var_one)
+
+# Hanging indents should add a level.
+foo = long_function_name(
+    var_one, var_two,
+    var_three, var_four)
 ```
 
 ## Comments
