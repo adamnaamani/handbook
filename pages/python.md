@@ -44,6 +44,9 @@ Code is read much more often than it is written. As PEP 20 says, "Readability co
 1. [Strings](#strings)
 1. [Time and Date](#time-and-date)
 1. [defaultdict](#defaultdict)
+1. [Files](#reading-files)
+     1. [Read](#read)
+     1. [Write](#write)
 1. [urllib](#urllib)
 1. [BeautifulSoup](#beautiful-soup)
 1. [Requests](#requests)
@@ -493,6 +496,26 @@ for d in dataset:
 
 ratingCounts
 ```
+
+## Files
+* **Read**  
+Using the with statement is better practice, it automatically closes the file even if the code encounters an exception. The code will run everything in the indent block then close the file object:
+    ```python
+    with open("example.txt","r") as file_one:
+        file_contents=file_one.read()
+        print(file_contents)
+        file_contents=file_one.readlines(10)
+        print(file_contents)
+
+    print(file_one.closed)
+    print(file_contents)
+    ```
+* **Write**
+    ```python
+    with open("example.txt","a") as file_one:
+        for line in Lines:
+            file_one.write(line)
+    ```
 
 ## urllib
 ```python

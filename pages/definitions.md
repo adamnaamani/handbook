@@ -35,6 +35,9 @@ Also known as credit memo. Issued to indicate a return of funds in the event of 
 #### Derived Data
 Data after it has been cleaned and prepared for analysis.
 
+#### Dot Product
+In mathematics, the dot product or scalar product is an algebraic operation that takes two equal-length sequences of numbers and returns a single number.
+
 #### DPO (Direct Public Offering)
 A DPO is similar to an initial public offering (IPO) in that securities, such as stock or debt, are sold to investors, but unlike an IPO, a company uses a DPO to raise capital directly and without a "firm underwriting" from an investment banking firm or broker-dealer.
 
@@ -110,6 +113,9 @@ Parameters are five variants of URL parameters used by marketers to track the ef
 | utm_campaign | Identifies a specific product promotion or strategic campaign.                                                            |
 | utm_term     | Identifies search terms.                                                                                                  |
 | utm_content  | Identifies what specifically was clicked to bring the user to the site, such as a banner ad or a text link (A/B testing). |
+
+#### Vector
+In mathematics, physics, and engineering, a Euclidean vector is a geometric object that has magnitude and direction. Vectors can be added to other vectors according to vector algebra.
 
 #### Web Sockets
 Rather than delivering data in batches through repeated requests by a client app, as might be expected from a REST API, a single connection is opened between an app and the API, with new results being sent through that connection whenever new matches occur. This results in a long-lived, low-latency delivery mechanism that can support very high throughput.

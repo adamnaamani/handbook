@@ -134,17 +134,63 @@ import pandas as pd
 ### Importing CSVs
 ```python
 dataset = pd.read_csv('data.csv', names=column_names)
-dataset.head()
+dataset.head() # First 5 rows
 ```
 
-### `.iloc`
+### `DataFrame`
+Two-dimensional, size-mutable, potentially heterogeneous tabular data. Data structure also contains labeled axes (rows and columns). Arithmetic operations align on both row and column labels. Can be thought of as a dict-like container for Series objects. The primary pandas data structure.
+```python
+df = pd.DataFrame(data)
+```
+
+### `loc`
+`loc` is primarily label based; when two arguments are used, you use column headers and row indexes to select the data you want. loc can also take an integer as a row or column number.
+```python
+df.loc[0, 'type_of_dwelling']
+```
+
+### `iloc`
 Purely integer-location based indexing for selection by position.
 `.iloc[]` is primarily integer position based (from 0 to length-1 of the axis), but may also be used with a boolean array.
 ```python
->>> type(df.iloc[0])
+df.iloc[0,0]
+```
+* Slicing  
+   You can also use loc and iloc to slice data frames and assign the values to a new data frame. 
+
+   ```python
+   z=df.loc[0:2,'pid':'full_address']
+   # or
+   z=df.iloc[0:2,0:3]
+   ```
+
+### `unique`
+```python
+df['type_of_dwelling'].unique()
 ```
 
-### `.dropna`
+### `array`
+```python
+a=np.array([0,1,2,3,4])
+
+a.size
+a.ndim
+a.shape
+```
+
+### `linspace`
+```python
+np.linspace(-2,2,num=9)
+```
+
+### `dot`
+Dot product of two arrays.  
+```python
+>>> np.dot(3, 4)
+12
+```
+
+### `dropna`
 Remove missing values.
 ```python
 df = pd.DataFrame(dataset)
