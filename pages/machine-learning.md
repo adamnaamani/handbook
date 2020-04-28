@@ -1,5 +1,7 @@
 # Machine Learning
 
+![Machine Learning](/images/machine-learning.jpg)
+
 > "Gives computers the ability to learn without being explicitly programmed."
 
 > "The most advanced AVMs use regression models to predict how small differences between properties influence a property’s value."
