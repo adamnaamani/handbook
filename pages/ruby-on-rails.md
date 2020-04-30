@@ -300,7 +300,7 @@ I prefer [Sidekiq](https://sidekiq.org) for background processing:
 > "_Need speed? Scale your app with Ruby's fastest job system, up to 20x faster than the competition!_"
 
 #### [Embrace Concurrency](https://github.com/mperham/sidekiq/wiki/Best-Practices#3-embrace-concurrency)
-> Sidekiq is designed for parallel execution so design your jobs so you can run lots of them in parallel. It has basic features for tuning concurrency (e.g. targeting a sidekiq process at a queue with a defined number of threads) but your system architecture is much simpler if you don't have such specialization.
+> "_Sidekiq is designed for parallel execution so design your jobs so you can run lots of them in parallel. It has basic features for tuning concurrency (e.g. targeting a sidekiq process at a queue with a defined number of threads) but your system architecture is much simpler if you don't have such specialization._"
 ```ruby
 module Insert
   class PropertyJob < ApplicationJob
