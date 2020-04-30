@@ -17,6 +17,7 @@
 1. [Internationalization](#internationalization)  
 1. [Validations](#validations)  
 1. [Errors](#errors)
+1. [ActiveJob](#activejob)
 
 ## Statistics
 `rails stats`
@@ -293,3 +294,25 @@ validates :continent, inclusion: { in: %w(North America South America) }
 ## Errors
 ### Deadlock
 A state in which each member of a group is waiting for another member, including itself, to take action, such as sending a message or more commonly releasing a lock.
+
+## ActiveJob
+I prefer [Sidekiq](https://sidekiq.org) for background processing:
+> "_Need speed? Scale your app with Ruby's fastest job system, up to 20x faster than the competition!_"
+
+#### [Embrace Concurrency](https://github.com/mperham/sidekiq/wiki/Best-Practices#3-embrace-concurrency)
+> Sidekiq is designed for parallel execution so design your jobs so you can run lots of them in parallel. It has basic features for tuning concurrency (e.g. targeting a sidekiq process at a queue with a defined number of threads) but your system architecture is much simpler if you don't have such specialization.
+```ruby
+module Insert
+  class PropertyJob < ApplicationJob
+    queue_as :default
+
+    def perform(city:, batch:)
+      batch.each do |record|
+        next if record.blank?
+
+        Properties::Create.call(city, record.deep_symbolize_keys)
+      end
+    end
+  end
+end
+```
