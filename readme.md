@@ -11,6 +11,7 @@
 1. [Database](/pages/database.md)
 1. [Definitions](/pages/definitions.md)
 1. [Design Patterns](/pages/design-patterns.md)
+1. [Docker](/pages/docker.md)
 1. [Git](/pages/git.md)
 1. [Heroku](/pages/heroku.md)
 1. [HTML](/pages/html.md)

@@ -4,6 +4,7 @@
 1. [Terminal](#terminal)
 1. [Rails](#rails)
 1. [Rspec](#rspec)
+1. [Redis](#redis)
 1. [Heroku](#heroku)
 1. [SQL](#sql)
 1. [MySQL](#mysql)
@@ -59,6 +60,12 @@ rake db:gis:setup
 ### Swagger
 ```bash
 rake rswag:specs:swaggerize
+```
+
+## Redis
+#### `redis-cli`
+```bash
+redis-cli monitor
 ```
 
 ## Heroku

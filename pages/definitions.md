@@ -94,6 +94,9 @@ These algorithms are designed to be one-way functions, meaning that once they’
 #### Smoke testing
 In computer programming and software testing, smoke testing (also confidence testing, sanity testing, build verification test and build acceptance test) is preliminary testing to reveal simple failures severe enough to, for example, reject a prospective software release.
 
+#### Standard Deviation
+In statistics, the standard deviation is a measure of the amount of variation or dispersion of a set of values. A low standard deviation indicates that the values tend to be close to the mean of the set, while a high standard deviation indicates that the values are spread out over a wider range.
+
 #### Stochastic Gradient Descent
 stochastic | stəˈkastɪk |  
 adjective _technical_  

@@ -18,6 +18,7 @@
 1. [Validations](#validations)  
 1. [Errors](#errors)
 1. [ActiveJob](#activejob)
+1. [Input/Output](#input-output)
 
 ## Statistics
 `rails stats`
@@ -315,4 +316,10 @@ module Insert
     end
   end
 end
+```
+
+## Input/Output
+```ruby
+print "Are you sure? (y/n) "
+return unless STDIN.gets.strip.downcase[0] == 'y'
 ```
