@@ -79,6 +79,9 @@ By taking the observed data and a proposed model, we want to write an algorithm 
 #### PREC (Personal Real Estate Corporation)
 Personal real estate corporations allow real estate licensees to access the business advantages of incorporation, including better planning of income and tax streams.
 
+#### Pro Rata
+Latin term used to describe a proportionate allocation. It essentially translates to "in proportion," which means a process where whatever is being allocated will be distributed in equal portions.
+
 #### Semver (Semantic Versioning)
 Given a version number MAJOR.MINOR.PATCH, increment the:
 

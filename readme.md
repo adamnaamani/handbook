@@ -1,5 +1,11 @@
 # Handbook
 
+This handbook contains a wide range of knowledge collected over the years from my perspective as both a tech startup founder and software developer. From humble roots in PHP and vanilla Javascript, it has been a constant evolution in learning and embracing modern technologies and standards.
+
+The topics covered are more of an [80/20](https://en.wikipedia.org/wiki/Pareto_principle) approach, in that you can learn enough to be dangerous by focusing on the underlying methodologies commonly found across multiple languages and frameworks. If it is of interest to you, I hope you find some takeaways and learn something new that could change the trajectory of whatever path you are on.
+
+If you would like to reach out, I more than welcome it, and can be contacted through my [blog](https://adamnaamani.com).
+
 ![Smart Home](/images/smart-home-automated-valuation.png)
 
 ## Table of Contents

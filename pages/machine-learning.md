@@ -6,7 +6,7 @@
 
 > "The most advanced AVMs use regression models to predict how small differences between properties influence a property’s value."
 
-With machine learning, what we are trying to do, essentially, is find out that if we are given a large amount of data (pairs of X and corresponding y), can we write an algorithm to figure out the optimal values of W and b? 
+> With machine learning, what we are trying to do, essentially, is find out that if we are given a large amount of data (pairs of X and corresponding y), can we write an algorithm to figure out the optimal values of W and b? 
 
 ## Table of Contents
 1. [Courses](#courses)
