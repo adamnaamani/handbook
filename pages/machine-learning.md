@@ -2,11 +2,11 @@
 
 ![Machine Learning](/images/machine-learning.jpg)
 
-> "Gives computers the ability to learn without being explicitly programmed."
+> "_Gives computers the ability to learn without being explicitly programmed._"
 
-> "The most advanced AVMs use regression models to predict how small differences between properties influence a property’s value."
+> "_The most advanced AVMs use regression models to predict how small differences between properties influence a property’s value._"
 
-> With machine learning, what we are trying to do, essentially, is find out that if we are given a large amount of data (pairs of X and corresponding y), can we write an algorithm to figure out the optimal values of W and b? 
+> "_With machine learning, what we are trying to do, essentially, is find out that if we are given a large amount of data (pairs of X and corresponding y), can we write an algorithm to figure out the optimal values of W and b?_"
 
 ## Table of Contents
 1. [Courses](#courses)
