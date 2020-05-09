@@ -37,6 +37,8 @@
 * [Predicting House Prices with Regression](https://www.coursera.org/learn/tensorflow-beginner-predicting-house-prices-regression)
 
 ## Neural Networks
+> From a process perspective, the development and deployment of deep learning systems should not be different than developing and deploying traditional software solutions.
+
 Artificial neural networks (ANN) or connectionist systems are computing systems vaguely inspired by the biological neural networks that constitute animal brains. Such systems "learn" to perform tasks by considering examples, generally without being programmed with task-specific rules.
 ### Activation Functions
 There are various types of activation functions used in Neural Networks:

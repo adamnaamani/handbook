@@ -5,6 +5,9 @@ The following are definitions related to Tech, Programming, Real Estate, Busines
 ## Table of Contents
 [A](#a) [B](#b) [C](#c) [D](#d) [E](#e) [F](#f) [G](#g) [H](#h) [I](#i) [J](#j) [K](#k) [L](#l) [M](#m) [N](#n) [O](#o) [P](#p) [Q](#q) [R](#r) [S](#s) [T](#t) [U](#u) [V](#v) [W](#w) [R](#r) [X](#x) [Y](#y) [Z](#z)
 
+#### 64-bit computing
+In computer architecture, 64-bit integers, memory addresses, or other data units are those that are 64 bits wide. Also, 64-bit CPU and ALU architectures are those that are based on registers, address buses, or data buses of that size. 64-bit microcomputers are computers in which 64-bit microprocessors are the norm.
+
 #### ACH (Automated Clearing House)
 A network that coordinates electronic payments and automated money transfers. ACH is a way to move money between banks without using paper checks, wire transfers, credit card networks, or cash.
 
@@ -49,6 +52,9 @@ Derivative financial contracts that obligate the parties to transact an asset at
 
 #### GDPR (General Data Protection Regulation)
 The General Data Protection Regulation (EU) is a regulation in EU law on data protection and privacy in the European Union (EU) and the European Economic Area (EEA). It also addresses the transfer of personal data outside the EU and EEA areas. The GDPR aims primarily to give control to individuals over their personal data and to simplify the regulatory environment for international business by unifying the regulation within the EU. Superseding the Data Protection Directive 95/46/EC, the regulation contains provisions and requirements related to the processing of personal data of individuals (formally called data subjects in the GDPR) who reside in the EEA, and applies to any enterprise—regardless of its location and the data subjects' citizenship or residence—that is processing the personal information of data subjects inside the EEA.
+
+#### Headless Content Management System
+A headless content management system, or headless CMS, is a back-end only content management system (CMS) built from the ground up as a content repository that makes content accessible via a RESTful API for display on any device.
 
 #### Hedonic Regression
 Breaks down the item being researched into its constituent characteristics, and obtains estimates of the contributory value of each characteristic.
