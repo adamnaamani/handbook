@@ -97,6 +97,15 @@ WHERE column_name operator value;
 * **EXPLAIN**
   ```sql
   EXPLAIN(ANALYZE, COSTS, VERBOSE, BUFFERS)
+
+  Seq Scan on listings
+  (cost=0.00..15470.34 rows=25569 width=1849)
+  (actual time=0.022..90.926 rows=24726 loops=1)
+  Filter: ((status)::text = 'Sold'::text)
+  Rows Removed by Filter: 37030
+
+  Planning Time: 0.900 ms
+  Execution Time: 94.235 ms
   ```
 * **IN**  
   Specifies a range of conditions with comma delimited list of values. Faster than `OR`. Order does not matter. Can contain another `SELECT`.  
