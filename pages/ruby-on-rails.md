@@ -18,6 +18,7 @@
 1. [Validations](#validations)  
 1. [Errors](#errors)
 1. [ActiveJob](#activejob)
+1. [ActionCable](#actioncable)
 1. [Input/Output](#input-output)
 
 ## Statistics
@@ -317,6 +318,9 @@ module Insert
   end
 end
 ```
+
+## ActionCable
+The WebSocket protocol creates a persistent, two-way connection between servers and clients allowing full-duplex communication.
 
 ## Input/Output
 ```ruby

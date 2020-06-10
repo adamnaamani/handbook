@@ -21,6 +21,7 @@ Created in 2005 by Linus Torvalds, git means different things to many a develope
 1. [Rebasing](#rebasing)
 1. [Blaming](#blaming)
 1. [Renaming](#renaming)  
+1. [History](#history)
 
 ## Initializing
 ```bash
@@ -68,4 +69,11 @@ git blame file
 ## Renaming
 ```bash
 git branch -m new-name
+```
+
+## History
+To view the history of changes to a file:
+```bash
+git log -p filename
+git show HEAD s
 ```
