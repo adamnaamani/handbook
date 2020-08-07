@@ -3,7 +3,7 @@
 The following are definitions related to Tech, Programming, Real Estate, Business, Accounting, and everything in between.
 
 ## Table of Contents
-[A](#a) [B](#b) [C](#c) [D](#d) [E](#e) [F](#f) [G](#g) [H](#h) [I](#i) [J](#j) [K](#k) [L](#l) [M](#m) [N](#n) [O](#o) [P](#p) [Q](#q) [R](#r) [S](#s) [T](#t) [U](#u) [V](#v) [W](#w) [R](#r) [X](#x) [Y](#y) [Z](#z)
+[A](#ach-automated-clearing-house) [B](#burndown-chart) [C](#cartesian-product) [D](#derived-data) [E](#epochs) [F](#futures) [G](#gdpr-general-data-protection-regulation) [H](#headless-content-management-system) [I](#ipo) [J](#j) [K](#k) [L](#latency) [M](#mdape) [N](#neural-network) [O](#op-ed) [P](#prec-personal-real-estate-corporation) [Q](#q) [R](#r) [S](#semver) [T](#thrashing) [U](#utm-urchin-tracking-module) [V](#vector) [W](#web-sockets) [R](#r) [X](#x) [Y](#y) [Z](#z)
 
 #### 64-bit computing
 In computer architecture, 64-bit integers, memory addresses, or other data units are those that are 64 bits wide. Also, 64-bit CPU and ALU architectures are those that are based on registers, address buses, or data buses of that size. 64-bit microcomputers are computers in which 64-bit microprocessors are the norm.
@@ -31,6 +31,9 @@ A relation between two or more modules which either directly or indirectly depen
 
 #### CMHC (Canada Mortgage and Housing Corporation)
 Canada Mortgage and Housing Corporation is a Crown Corporation of the Government of Canada. Its superseding agency was established after World War II, to help returning war veterans find housing. It has since expanded its mandate to assist housing for all Canadians.
+
+#### Contribution Margin
+Contribution margin, or dollar contribution per unit, is the selling price per unit minus the variable cost per unit. "Contribution" represents the portion of sales revenue that is not consumed by variable costs and so contributes to the coverage of fixed costs.
 
 #### Credit Note
 Also known as credit memo. Issued to indicate a return of funds in the event of an invoice error, incorrect or damaged products, purchase cancellation, or otherwise specified circumstance.
