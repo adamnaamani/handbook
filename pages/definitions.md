@@ -3,7 +3,7 @@
 The following are definitions related to Tech, Programming, Real Estate, Business, Accounting, and everything in between.
 
 ## Table of Contents
-[A](#ach-automated-clearing-house) [B](#burndown-chart) [C](#cartesian-product) [D](#derived-data) [E](#epochs) [F](#futures) [G](#gdpr-general-data-protection-regulation) [H](#headless-content-management-system) [I](#ipo) [J](#j) [K](#k) [L](#latency) [M](#mdape) [N](#neural-network) [O](#op-ed) [P](#prec-personal-real-estate-corporation) [Q](#q) [R](#r) [S](#semver) [T](#thrashing) [U](#utm-urchin-tracking-module) [V](#vector) [W](#web-sockets) [R](#r) [X](#x) [Y](#y) [Z](#z)
+[A](#ach-automated-clearing-house) [B](#burndown-chart) [C](#cartesian-product) [D](#derived-data) [E](#epochs) [F](#futures) [G](#gdpr-general-data-protection-regulation) [H](#headless-content-management-system) [I](#ipo) [J](#j) [K](#k) [L](#latency) [M](#mdape) [N](#neural-network) [O](#op-ed) [P](#prec-personal-real-estate-corporation) [Q](#q) [R](#r) [S](#semver-semantic-versioning) [T](#thrashing) [U](#utm-urchin-tracking-module) [V](#vector) [W](#web-sockets) [R](#r) [X](#x) [Y](#y) [Z](#z)
 
 #### 64-bit computing
 In computer architecture, 64-bit integers, memory addresses, or other data units are those that are 64 bits wide. Also, 64-bit CPU and ALU architectures are those that are based on registers, address buses, or data buses of that size. 64-bit microcomputers are computers in which 64-bit microprocessors are the norm.
@@ -99,6 +99,11 @@ Given a version number MAJOR.MINOR.PATCH, increment the:
 3. PATCH version when you make backwards compatible bug fixes.
 
 Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.
+
+#### Sensitivity Analysis
+A sensitivity analysis determines how different values of an independent variable affect a particular dependent variable under a given set of assumptions. In other words, sensitivity analyses study how various sources of uncertainty in a mathematical model contribute to the model's overall uncertainty. This technique is used within specific boundaries that depend on one or more input variables.
+
+Sensitivity analysis is used in the business world and in the field of economics. It is commonly used by financial analysts and economists, and is also known as a what-if analysis.
 
 #### SHA (Secure Hash Algorithm)  
 These algorithms are designed to be one-way functions, meaning that once they’re transformed into their respective hash values, it’s virtually impossible to transform them back into the original data.
