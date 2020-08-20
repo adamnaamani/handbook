@@ -124,6 +124,9 @@ An iterative method for optimizing an objective function with suitable smoothnes
 #### Thrashing
 In computer science, thrashing occurs when a computer's virtual memory resources are overused, leading to a constant state of paging and page faults, inhibiting most application-level processing. This causes the performance of the computer to degrade or collapse. The situation can continue indefinitely until either the user closes some running applications or the active processes free up additional virtual memory resources.
 
+#### Triple Net Lease
+A triple net lease (triple-Net or NNN) is a lease agreement on a property whereby the tenant or lessee promises to pay all the expenses of the property including real estate taxes, building insurance, and maintenance. These payments are in addition to the fees for rent and utilities, and all payments are typically the responsibility of the landlord in the absence of a triple, double, or single net lease.
+
 #### UTM (Urchin Tracking Module)  
 Parameters are five variants of URL parameters used by marketers to track the effectiveness of online marketing campaigns across traffic sources and publishing media.  
 | Parameter    | Purpose                                                                                                                   |
