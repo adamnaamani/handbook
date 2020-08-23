@@ -23,6 +23,7 @@ If you would like to reach out, I more than welcome it, and can be contacted thr
 1. [HTML](/pages/html.md)
 1. [Javascript](/pages/javascript.md)
 1. [Jest](/pages/jest.md)
+1. [Linux](/pages/linux.md)
 1. [Machine Learning](/pages/machine-learning.md)
 1. [Node](/pages/node.md)
 1. [Python](/pages/python.md)
