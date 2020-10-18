@@ -4,8 +4,23 @@
 1. [Flags](#flags)
 
 ## Flags
-```bash
-curl -sL 
+`-s`: silent mode.
+```curl
+curl -s
 ```
-`-s`: Silent mode  
-`-L` or `--location`: Follows redirects
+
+`-L` or `--location`: follows redirects.
+```curl
+curl -L
+```
+
+`-o` or `-O`: saves the output to a file.
+
+With predefined filename:
+```curl
+curl -o listings.js https://resider.ca/listings.js
+```
+With original filename:
+```curl
+curl -O https://resider.ca/listings.js
+```
