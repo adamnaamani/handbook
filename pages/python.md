@@ -10,9 +10,9 @@
 
 > "Used at NASA, Quora, Amazon, Reddit, Netflix, Dropbox, and Instagram."
 
----  
+---
 
-_Python is powerful...and fast; plays well with others; runs everywhere; is friendly and easy to learn; is Open._  
+_Python is powerful...and fast; plays well with others; runs everywhere; is friendly and easy to learn; is Open._
 
 _Interpreted, not compiled. Dynamically Typed. Object-Oriented._
 
@@ -50,6 +50,7 @@ Code is read much more often than it is written. As PEP 20 says, "Readability co
 1. [urllib](#urllib)
 1. [BeautifulSoup](#beautiful-soup)
 1. [Requests](#requests)
+1. [Vectorization](#vectorization)
 
 ## pip3
 ```bash
@@ -115,23 +116,23 @@ $ django <command or shortcut>
 ```
 
 ### Field Types
-* **`CharField`**  
+* **`CharField`**
 Used to define short-to-mid sized fixed-length strings. You must specify the `max_length` of the data to be stored.
-* **`TextField`**  
+* **`TextField`**
 Used for large arbitrary-length strings. You may specify a max_length for the field, but this is used only when the field is displayed in forms (it is not enforced at the database level).
-* **`IntegerField`**  
+* **`IntegerField`**
 Field for storing integer (whole number) values, and for validating entered values as integers in forms.
-* **`DateField`** and **`DateTimeField`**  
+* **`DateField`** and **`DateTimeField`**
 Used for storing/representing dates and date/time information (as Python `datetime.date` in and `datetime.datetime` objects, respectively). These fields can additionally declare the (mutually exclusive) parameters `auto_now=True` (to set the field to the current date every time the model is saved), `auto_now_add` (to only set the date when the model is first created) , and default (to set a default date that can be overridden by the user).
-* **`EmailField`**  
+* **`EmailField`**
 Used to store and validate email addresses.
-* **`FileField`** and **`ImageField`**  
+* **`FileField`** and **`ImageField`**
 Used to upload files and images respectively (the **`ImageField`** simply adds additional validation that the uploaded file is an image). These have parameters to define how and where the uploaded files are stored.
-* **`AutoField`**  
+* **`AutoField`**
 A special type of **`IntegerField`** that automatically increments. A primary key of this type is automatically added to your model if you don’t explicitly specify one.
-* **`ForeignKey`**  
+* **`ForeignKey`**
 Used to specify a one-to-many relationship to another database model (e.g. a car has one manufacturer, but a manufacturer can make many cars). The "one" side of the relationship is the model that contains the "key" (models containing a "foreign key" referring to that "key", are on the "many" side of such a relationship).
-* **`ManyToManyField`**  
+* **`ManyToManyField`**
 Used to specify a many-to-many relationship (e.g. a book can have several genres, and each genre can contain several books). In our library app we will use these very similarly to **`ForeignKeys`**, but they can be used in more complicated ways to describe the relationships between groups. These have the parameter `on_delete` to define what happens when the associated record is deleted (e.g. a value of `models.SET_NULL` would simply set the value to `NULL`).
 
 ### Init
@@ -148,8 +149,8 @@ import directory.module
 
 from directory import module
 ```
-  
-### Templates  
+
+### Templates
 Django will automatically look for `.html` templates in a directory named `/templates/` in your application.
 
 ### Static
@@ -342,11 +343,11 @@ x, y = 5, 10
 
 ## Formatting
 ### f-Strings
-A new and improved way to format strings in Python. Also called “formatted string literals,” f-strings are string literals that have an f at the beginning and curly braces containing expressions that will be replaced with their values.  
+A new and improved way to format strings in Python. Also called “formatted string literals,” f-strings are string literals that have an f at the beginning and curly braces containing expressions that will be replaced with their values.
 ```python
 name = 'Adam'
 
-# Lower or Uppercase 
+# Lower or Uppercase
 f"Hello, {name}."
 F"Hello, {name}."
 
@@ -355,7 +356,7 @@ message = (
     f"Hi {name}. "
     f"You are a {profession}. "
 )
-``` 
+```
 
 ## CSV and JSON
 Two formats that are easy to read and manipulate in Python.
@@ -382,7 +383,7 @@ for line in reader:
     line = line[:-3]
     if line[-1] == 'Y':
         dataset.append(line)
-dataset[0]        
+dataset[0]
 ```
 
 ### JSON
@@ -498,7 +499,7 @@ ratingCounts
 ```
 
 ## Files
-* **Read**  
+* **Read**
 Using the with statement is better practice, it automatically closes the file even if the code encounters an exception. The code will run everything in the indent block then close the file object:
     ```python
     with open("example.txt","r") as file_one:
@@ -554,3 +555,6 @@ Requests allows you to send HTTP/1.1 requests extremely easily. There’s no nee
 >>> r.json()
 {'private_gists': 419, 'total_private_repos': 77, ...}
 ```
+
+## Vectorization
+Functions that are non-computationally optimal causes an algorithm to take a long time to run. Vectorization speeds up Python code without using a loop. These functions are built into `numpy`.

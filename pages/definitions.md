@@ -17,6 +17,9 @@ In artificial neural networks, the activation function of a node defines the out
 #### Ad hoc
 Ad hoc is a Latin phrase meaning literally "to this". In English, it generally signifies a solution designed for a specific problem or task, non-generalizable, and not intended to be able to be adapted to other purposes.
 
+#### Assignment of Rents
+A charge registered against title allowing a lender to collect rent directly from a tenant if there is a default under a mortgage.
+
 #### Atomic
 Atomicity is a guarantee of isolation from concurrent processes. Additionally, atomic operations commonly have a succeed-or-fail definition — they either successfully change the state of the system, or have no apparent effect.
 
@@ -55,6 +58,9 @@ Derivative financial contracts that obligate the parties to transact an asset at
 
 #### GDPR (General Data Protection Regulation)
 The General Data Protection Regulation (EU) is a regulation in EU law on data protection and privacy in the European Union (EU) and the European Economic Area (EEA). It also addresses the transfer of personal data outside the EU and EEA areas. The GDPR aims primarily to give control to individuals over their personal data and to simplify the regulatory environment for international business by unifying the regulation within the EU. Superseding the Data Protection Directive 95/46/EC, the regulation contains provisions and requirements related to the processing of personal data of individuals (formally called data subjects in the GDPR) who reside in the EEA, and applies to any enterprise—regardless of its location and the data subjects' citizenship or residence—that is processing the personal information of data subjects inside the EEA.
+
+#### Gradient Descent
+Gradient descent is a first-order iterative optimization algorithm for finding a local minimum of a differentiable function. It's an optimization algorithm used to minimize some function by iteratively moving in the direction of steepest descent as defined by the negative of the gradient. In machine learning, gradient descent is used to update the parameters of the model. Parameters refer to coefficients in Linear Regression and weights in neural networks.
 
 #### Headless Content Management System
 A headless content management system, or headless CMS, is a back-end only content management system (CMS) built from the ground up as a content repository that makes content accessible via a RESTful API for display on any device.
@@ -105,7 +111,7 @@ A sensitivity analysis determines how different values of an independent variabl
 
 Sensitivity analysis is used in the business world and in the field of economics. It is commonly used by financial analysts and economists, and is also known as a what-if analysis.
 
-#### SHA (Secure Hash Algorithm)  
+#### SHA (Secure Hash Algorithm)
 These algorithms are designed to be one-way functions, meaning that once they’re transformed into their respective hash values, it’s virtually impossible to transform them back into the original data.
 
 #### Smoke testing
@@ -115,8 +121,8 @@ In computer programming and software testing, smoke testing (also confidence tes
 In statistics, the standard deviation is a measure of the amount of variation or dispersion of a set of values. A low standard deviation indicates that the values tend to be close to the mean of the set, while a high standard deviation indicates that the values are spread out over a wider range.
 
 #### Stochastic Gradient Descent
-stochastic | stəˈkastɪk |  
-adjective _technical_  
+stochastic | stəˈkastɪk |
+adjective _technical_
 Having a random probability distribution or pattern that may be analysed statistically but may not be predicted precisely.
 
 An iterative method for optimizing an objective function with suitable smoothness properties (e.g. differentiable or subdifferentiable). It can be regarded as a stochastic approximation of gradient descent optimization, since it replaces the actual gradient (calculated from the entire data set) by an estimate thereof (calculated from a randomly selected subset of the data). Especially in big data applications this reduces the computational burden, achieving faster iterations in trade for a slightly lower convergence rate.
@@ -127,8 +133,8 @@ In computer science, thrashing occurs when a computer's virtual memory resources
 #### Triple Net Lease
 A triple net lease (triple-Net or NNN) is a lease agreement on a property whereby the tenant or lessee promises to pay all the expenses of the property including real estate taxes, building insurance, and maintenance. These payments are in addition to the fees for rent and utilities, and all payments are typically the responsibility of the landlord in the absence of a triple, double, or single net lease.
 
-#### UTM (Urchin Tracking Module)  
-Parameters are five variants of URL parameters used by marketers to track the effectiveness of online marketing campaigns across traffic sources and publishing media.  
+#### UTM (Urchin Tracking Module)
+Parameters are five variants of URL parameters used by marketers to track the effectiveness of online marketing campaigns across traffic sources and publishing media.
 | Parameter    | Purpose                                                                                                                   |
 |--------------|---------------------------------------------------------------------------------------------------------------------------|
 | utm_source   | Identifies which site sent the traffic, and is a required parameter.                                                      |
