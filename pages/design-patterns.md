@@ -17,7 +17,7 @@ An optimization technique used primarily to speed up computer programs by storin
 Memoization is a technique you can use to speed up your accessor methods. It caches the results of methods that do time-consuming work, work that only needs to be done once. In Rails, you see memoization used so often that it even included a module that would memoize methods for you.
 
 ## Lambda
-Lambda functions: anonymous, quick throwaway functions without naming them
+Lambda functions: anonymous, quick throwaway functions without naming them.
 
 ## Currying
 In mathematics and computer science, currying is the technique of translating the evaluation of a function that takes multiple arguments into evaluating a sequence of functions, each with a single argument.
